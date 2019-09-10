@@ -1,0 +1,129 @@
+import 'package:flutter/material.dart';
+import 'package:splashscreen/splashscreen.dart';
+
+final Color mainColor = Color(0xff22b6ff);
+
+void main() => runApp(new MaterialApp(home: new MyApp()));
+
+class MyApp extends StatefulWidget {
+  @override
+  _MyAppState createState() => new _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  @override
+  Widget build(BuildContext context) {
+    return new SplashScreen(
+      seconds: 5,
+      navigateAfterSeconds: new AfterSplash(),
+      backgroundColor: mainColor,
+      loaderColor: Colors.white,
+      image: new Image.asset('assets/images/logos/white-logo.png'),
+      photoSize: 60.0,
+    );
+  }
+}
+
+class AfterSplash extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return new Scaffold(
+      appBar: new AppBar(
+        title: new Text("KBIZ Bangalore"),
+        backgroundColor: mainColor,
+        automaticallyImplyLeading: true,
+      ),
+      body: new Container(
+        child: new Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            new Image.asset('assets/images/banners/short-white-banner.jpg'), 
+          ]
+        ),
+      ),
+      drawer: Drawer(
+        child: ListView(
+          children: <Widget>[
+            DrawerHeader(
+              child: new Column(
+                children: [
+                  new Image.asset('assets/images/logos/color-logo.png'), 
+                ]
+              ),
+              decoration: BoxDecoration(
+                color: mainColor,
+              ),
+            ),
+            ListTile(
+              title: Text('Company Introduce'),
+              leading: Icon(
+                Icons.business
+              ),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              title: Text('Management & Exim Dept'),
+              leading: Icon(Icons.public),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              title: Text('Trade & Expo Dept'),
+              leading: Icon(Icons.directions_boat),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              title: Text('Consultancy Dept'),
+              leading: Icon(Icons.attach_money),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              title: Text('Biz Tour'),
+              leading: Icon(Icons.directions_bus),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              title: Text('Biz Event'),
+              // leading: Icon(Icons.event),
+              leading: Icon(Icons.cake),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              title: Text('Art'),
+              // leading: Icon(Icons.photo),
+              leading: Icon(Icons.palette),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              title: Text('Internship'),
+              leading: Icon(Icons.people),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              title: Text('A Monthly KBIZ'),
+              leading: Icon(Icons.calendar_today),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
