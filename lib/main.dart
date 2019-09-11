@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:splashscreen/splashscreen.dart';
 
+import './routes/bottom_navigation.dart';
+
 final Color mainColor = Color(0xff22b6ff);
 
 void main() => runApp(new MaterialApp(home: new MyApp()));
@@ -14,12 +16,24 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return new SplashScreen(
-      seconds: 5,
+      seconds: 3,
       navigateAfterSeconds: new AfterSplash(),
-      backgroundColor: mainColor,
-      loaderColor: Colors.white,
-      image: new Image.asset('assets/images/logos/white-logo.png'),
+      // backgroundColor: mainColor,
+      image: Image.asset(
+        'assets/images/logos/white-logo.png',
+        alignment: Alignment.bottomCenter,
+      ),
       photoSize: 60.0,
+      gradientBackground: LinearGradient(
+        begin: Alignment.topCenter,
+        end: Alignment.bottomCenter,
+        colors: [
+          Colors.blue[500],
+          Colors.blue[400],
+          Colors.blue[300],
+          Colors.blue[200],
+        ],
+      ),
     );
   }
 }
@@ -31,24 +45,20 @@ class AfterSplash extends StatelessWidget {
       appBar: new AppBar(
         title: new Text("KBIZ Bangalore"),
         backgroundColor: mainColor,
-        automaticallyImplyLeading: true,
       ),
-      body: new Container(
-        child: new Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            new Image.asset('assets/images/banners/short-white-banner.jpg'), 
-          ]
-        ),
-      ),
+      body: new BottomNavigation(),
       drawer: Drawer(
         child: ListView(
           children: <Widget>[
             DrawerHeader(
               child: new Column(
-                children: [
-                  new Image.asset('assets/images/logos/color-logo.png'), 
-                ]
+                children: <Widget>[
+                  new Image.asset(
+                    'assets/images/logos/india-128.png',
+                    width: 100.0,
+                    height: 100.0,
+                  ),
+                ],
               ),
               decoration: BoxDecoration(
                 color: mainColor,
