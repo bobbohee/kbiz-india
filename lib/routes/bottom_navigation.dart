@@ -12,34 +12,39 @@ class BottomNavigation extends StatefulWidget {
 class _BottomNavigationState extends State<BottomNavigation> with SingleTickerProviderStateMixin {
   TabController _tabController;
 
-  var _kTabPages = <Widget> [
-    new Container(
-      color: Colors.yellow,
-      child: new Column(
+  List<Widget> _kTabPages = <Widget> [
+    Container(
+      color: Colors.white,
+      child: Column(
         children: <Widget> [
-          new Image.asset(
-            'assets/images/banners/short-white-banner.jpg',
+          Container(
+            child: Image.asset(
+              'assets/images/banners/short-white-banner.jpg',
+            ),
           ),
-          new Container(
-            
-          )
+          Expanded(                        // 세로 남은 공간 차지
+            child: Container(
+              alignment: Alignment.center, // 가로 남은 공간 차지
+              child: Text(
+                'Comming Soon !',
+                style: TextStyle(
+                  fontSize: 36.0,
+                  fontFamily: 'Roboto',
+                ),
+              ),
+            )
+          ),
         ],
       ),
     ),
-    new Container(
-      child: new Column(
-        children: <Widget> [
-          new Image.asset(
-            'assets/images/banners/expo-banner.jpg',
-          ),
-        ],
+    Container(
+      alignment: Alignment.topLeft,
+      child: Image.asset(
+        'assets/images/banners/expo-banner.jpg',
+        fit: BoxFit.contain,
       ),
     ),
-    new Container(
-      child: new Column(
-        children: <Widget> [],
-      ),
-    ),
+    Container(),
   ];
 
   static const _kTabs = <Tab> [

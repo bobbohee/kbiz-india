@@ -28,10 +28,10 @@ class _MyAppState extends State<MyApp> {
         begin: Alignment.topCenter,
         end: Alignment.bottomCenter,
         colors: [
-          Colors.blue[500],
-          Colors.blue[400],
-          Colors.blue[300],
-          Colors.blue[200],
+          Color(0xff22b6ff),
+          Color(0xff4dc3ff),
+          Color(0xff80d4ff),
+          Color(0xffb3e6ff),
         ],
       ),
     );
@@ -39,8 +39,10 @@ class _MyAppState extends State<MyApp> {
 }
 
 class AfterSplash extends StatelessWidget {
+  
   @override
   Widget build(BuildContext context) {
+
     return new Scaffold(
       appBar: new AppBar(
         title: new Text("KBIZ Bangalore"),
