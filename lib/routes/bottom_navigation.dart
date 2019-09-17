@@ -14,34 +14,47 @@ class _BottomNavigationState extends State<BottomNavigation> with SingleTickerPr
 
   List<Widget> _kTabPages = <Widget> [
     Container(
-      color: Colors.white,
       child: Column(
         children: <Widget> [
           Container(
-            child: Image.asset(
-              'assets/images/banners/short-white-banner.jpg',
-            ),
+            child: Image.asset('assets/images/banners/short-white-banner.jpg'),
           ),
-          Expanded(                        // 세로 남은 공간 차지
+          Expanded( // 남은 공간 차지
             child: Container(
-              alignment: Alignment.center, // 가로 남은 공간 차지
-              child: Text(
-                'Comming Soon !',
-                style: TextStyle(
-                  fontSize: 36.0,
-                  fontFamily: 'Roboto',
-                ),
-              ),
+              child: Stack(
+                alignment: Alignment.center,
+                children: <Widget> [
+                  Container(
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        fit: BoxFit.cover,
+                        alignment: FractionalOffset.center,
+                        image: AssetImage('assets/images/backgrounds/blue-gradation.png'),
+                      )
+                    ),
+                  ),
+                  Text(
+                    'Home Page',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 36.0,
+                      fontFamily: 'Roboto',
+                    ),
+                  ),
+                ],
+              )
             )
           ),
         ],
       ),
     ),
     Container(
-      alignment: Alignment.topLeft,
-      child: Image.asset(
-        'assets/images/banners/expo-banner.jpg',
-        fit: BoxFit.contain,
+      decoration: BoxDecoration(
+        image: DecorationImage(
+          fit: BoxFit.fitHeight,
+          alignment: FractionalOffset.topLeft,
+          image: AssetImage('assets/images/banners/expo-banner.jpg'),
+        )
       ),
     ),
     Container(),

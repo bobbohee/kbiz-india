@@ -22,6 +22,7 @@ flutter:
     - lib/routes/
     - assets/images/logos/
     - assets/images/banners/
+    - assets/images/backgrounds/
   fonts:
     - family: Roboto
       fonts:
