@@ -18,7 +18,6 @@ class _MyAppState extends State<MyApp> {
     return new SplashScreen(
       seconds: 3,
       navigateAfterSeconds: new AfterSplash(),
-      // backgroundColor: mainColor,
       image: Image.asset(
         'assets/images/logos/white-logo.png',
       ),
@@ -63,7 +62,7 @@ class AfterSplash extends StatelessWidget {
                       Container(
                         margin: EdgeInsets.only(right: 20.0),
                         child: Image.asset(
-                          'assets/images/logos/india-128.png',
+                          'assets/images/logos/color-logo-128.png',
                           width: 80.0,
                           height: 80.0,
                         ),
@@ -88,45 +87,28 @@ class AfterSplash extends StatelessWidget {
               ),
             ),
             ListTile(
-              title: Text('Company Introduce'),
+              title: Text('Home / About us'),
+              leading: Icon(Icons.home),
+            ),
+            ListTile(
+              title: Text('Corporate Consulting'),
               leading: Icon(Icons.business),
-              // onTap: () {
-              //   Navigator.pop(context);
-              // },
             ),
             ListTile(
-              title: Text('Management & Exim Dept'),
-              leading: Icon(Icons.public),
-            ),
-            ListTile(
-              title: Text('Trade & Expo Dept'),
-              leading: Icon(Icons.directions_boat),
-            ),
-            ListTile(
-              title: Text('Consultancy Dept'),
-              leading: Icon(Icons.attach_money),
-            ),
-            ListTile(
-              title: Text('Biz Tour'),
-              leading: Icon(Icons.directions_bus),
-            ),
-            ListTile(
-              title: Text('Biz Event'),
-              // leading: Icon(Icons.event),
+              title: Text('Events'),
               leading: Icon(Icons.cake),
             ),
             ListTile(
-              title: Text('Art'),
-              // leading: Icon(Icons.photo),
-              leading: Icon(Icons.palette),
+              title: Text('Culture'),
+              leading: Icon(Icons.face),
             ),
             ListTile(
-              title: Text('Internship'),
-              leading: Icon(Icons.people),
+              title: Text('News'),
+              leading: Icon(Icons.fiber_new),
             ),
             ListTile(
-              title: Text('A Monthly KBIZ'),
-              leading: Icon(Icons.calendar_today),
+              title: Text('Contant us'),
+              leading: Icon(Icons.format_list_bulleted),
             ),
           ],
         ),
