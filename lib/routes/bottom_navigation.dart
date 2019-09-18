@@ -49,12 +49,12 @@ class _BottomNavigationState extends State<BottomNavigation> with SingleTickerPr
       ),
     ),
     Container(
-      decoration: BoxDecoration(
-        image: DecorationImage(
-          fit: BoxFit.fitHeight,
-          alignment: FractionalOffset.topLeft,
-          image: AssetImage('assets/images/banners/expo-banner.jpg'),
-        )
+      child: ListView(
+        children: <Widget>[
+          Image.asset(
+            'assets/images/banners/expo-banner.jpg'
+          )
+        ],
       ),
     ),
     Container(),
