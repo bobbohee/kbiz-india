@@ -47,72 +47,92 @@ class AfterSplash extends StatelessWidget {
         backgroundColor: mainColor,
       ),
       body: new BottomNavigation(),
-      drawer: Drawer(
-        child: ListView(
-          children: <Widget> [
-            Container(
-              color: mainColor,
-              height: 120.0,
-              child: DrawerHeader(
-                margin: EdgeInsets.all(0.0),
-                padding: EdgeInsets.all(20.0),
-                child: Container(
-                  child: Row(
-                    children: <Widget> [
-                      Container(
-                        margin: EdgeInsets.only(right: 20.0),
-                        child: Image.asset(
-                          'assets/images/logos/color-logo-128.png',
-                          width: 80.0,
-                          height: 80.0,
-                        ),
-                      ),
-                      Expanded(
-                        child: Container(
-                          alignment: Alignment.center,
-                          child: Text(
-                            'Hello KSINDIA : )',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 18.0,
-                              fontFamily: 'Roboto',
-                              letterSpacing: 0.6,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  )
-                ),
-              ),
-            ),
-            ListTile(
-              title: Text('Home / About us'),
-              leading: Icon(Icons.home),
-            ),
-            ListTile(
-              title: Text('Corporate Consulting'),
-              leading: Icon(Icons.business),
-            ),
-            ListTile(
-              title: Text('Events'),
-              leading: Icon(Icons.cake),
-            ),
-            ListTile(
-              title: Text('Culture'),
-              leading: Icon(Icons.face),
-            ),
-            ListTile(
-              title: Text('News'),
-              leading: Icon(Icons.fiber_new),
-            ),
-            ListTile(
-              title: Text('Contant us'),
-              leading: Icon(Icons.format_list_bulleted),
-            ),
-          ],
+      drawer: Drawer( 
+        child: ListView.builder(
+          itemBuilder: (BuildContext context, int index) => MyTileItem(data[index]),
+          itemCount: data.length,
         ),
       ),
     );
   }
 }
+
+
+class MyTileItem extends StatelessWidget {
+  const MyTileItem(this.myTile);
+
+  final MyTile myTile;
+
+  Widget _buildTiles(MyTile root) {
+    if (root.children.isEmpty)
+      return ListTile(title: Text(root.title));
+    return ExpansionTile(
+      key: PageStorageKey<MyTile>(root),
+      title: Text(root.title),
+      children: root.children.map<Widget>(_buildTiles).toList(),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return _buildTiles(myTile);
+  }
+}
+
+class MyTile {
+  MyTile(this.title, [this.children = const <MyTile>[]]);
+  final String title;
+  final List<MyTile> children;
+}
+
+final List<MyTile> data = <MyTile>[
+  MyTile('Home / About Us'),
+  MyTile(
+    'Corporate Consulting',
+    <MyTile>[
+      MyTile('Market Research'),
+      MyTile('Market Establishments'),
+      MyTile('Business Registraions'),
+      MyTile('Business Budgeting'),
+      MyTile('HR Services'),
+      MyTile('Company / Product Launch'),
+      MyTile('Accounts & Tax Management'),
+    ],
+  ),
+  MyTile('Events'),
+  MyTile('Culture',
+    <MyTile>[
+      MyTile(
+        'Language',
+        <MyTile>[
+          MyTile('Korean'),
+          MyTile('Handi'),
+          MyTile('English'),
+        ],
+      ),
+      MyTile(
+        'Dance',
+        <MyTile>[
+          MyTile('K-pop'),
+          MyTile('Indian Dance'),
+        ],
+      ),
+      MyTile(
+        'Sport',
+        <MyTile>[
+          MyTile('Taekwondo'),
+          MyTile('Toga'),
+        ],
+      ),
+      MyTile(
+        'Food',
+        <MyTile>[
+          MyTile('Korean'),
+          MyTile('Indian'),
+        ],
+      ),
+    ],
+  ),
+  MyTile('News'),
+  MyTile('Contact Us')
+];
