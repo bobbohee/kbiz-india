@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 
 final Color mainColor = Color(0xff22b6ff);
 
-class BottomNavigation extends StatefulWidget {
-  const BottomNavigation({Key key}) : super(key: key);
+class MyTab extends StatefulWidget {
+  const MyTab({Key key}) : super(key: key);
 
   @override
-  _BottomNavigationState createState() => _BottomNavigationState();
+  _MyTabState createState() => _MyTabState();
 }
 
-class _BottomNavigationState extends State<BottomNavigation> with SingleTickerProviderStateMixin {
+class _MyTabState extends State<MyTab> with SingleTickerProviderStateMixin {
   TabController _tabController;
 
   List<Widget> _kTabPages = <Widget> [
@@ -37,7 +37,7 @@ class _BottomNavigationState extends State<BottomNavigation> with SingleTickerPr
                     'Home Page',
                     style: TextStyle(
                       color: Colors.white,
-                      fontSize: 36.0,
+                      fontSize: 30.0,
                       fontFamily: 'Roboto',
                     ),
                   ),
@@ -51,9 +51,7 @@ class _BottomNavigationState extends State<BottomNavigation> with SingleTickerPr
     Container(
       child: ListView(
         children: <Widget>[
-          Image.asset(
-            'assets/images/banners/expo-banner.jpg'
-          )
+          Image.asset('assets/images/banners/expo-banner.jpg')
         ],
       ),
     ),
@@ -64,21 +62,21 @@ class _BottomNavigationState extends State<BottomNavigation> with SingleTickerPr
     Tab(
       icon: Icon(
         Icons.home,
-        size: 32.0,
+        size: 28.0,
       ),
       text: 'HOME',
     ),
     Tab(
       icon: Icon(
         Icons.event,
-        size: 32.0,
+        size: 28.0,
       ),
       text: 'EVENT'
     ),
     Tab(
       icon: Icon(
         Icons.business,
-        size: 32.0,
+        size: 28.0,
       ),
       text: 'BUSINESS'
     ),
