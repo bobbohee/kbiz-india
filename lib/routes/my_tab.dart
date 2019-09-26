@@ -54,7 +54,6 @@ class _MyTabState extends State<MyTab> with SingleTickerProviderStateMixin {
         padding: EdgeInsets.all(20.0),
         children: <Widget>[
           Container(
-            // margin: EdgeInsets.only(bottom: 20.0),
             child: Text(
               'Buyer-Seller Meetings',
               style: TextStyle(
@@ -68,7 +67,7 @@ class _MyTabState extends State<MyTab> with SingleTickerProviderStateMixin {
           Container(
             margin: EdgeInsets.all(20.0),
             padding: EdgeInsets.all(0.0),
-            child: Image.asset('assets/images/contents/events-meeting.png')
+            child: Image.asset('assets/images/contents/events-buyer-seller-meeting-600.png')
           ),
           Container(
             margin: EdgeInsets.only(bottom: 18.0),
@@ -482,7 +481,6 @@ class _MyTabState extends State<MyTab> with SingleTickerProviderStateMixin {
             ),
           ),
           Container(
-            margin: EdgeInsets.only(bottom: 20.0),
             child: Text(
               'Corporate Events',
               style: TextStyle(
@@ -492,6 +490,11 @@ class _MyTabState extends State<MyTab> with SingleTickerProviderStateMixin {
                 color: Color(0xffff9124),
               ),
             ),
+          ),
+          Container(
+            margin: EdgeInsets.all(20.0),
+            padding: EdgeInsets.all(0.0),
+            child: Image.asset('assets/images/contents/events-corporate-events-600.png')
           ),
           Container(
             margin: EdgeInsets.only(bottom: 18.0),
@@ -531,7 +534,6 @@ class _MyTabState extends State<MyTab> with SingleTickerProviderStateMixin {
             ),
           ),
           Container(
-            margin: EdgeInsets.only(bottom: 20.0),
             child: Text(
               'Online Events',
               style: TextStyle(
@@ -541,6 +543,11 @@ class _MyTabState extends State<MyTab> with SingleTickerProviderStateMixin {
                 color: Color(0xffff9124),
               ),
             ),
+          ),
+          Container(
+            margin: EdgeInsets.all(20.0),
+            padding: EdgeInsets.all(0.0),
+            child: Image.asset('assets/images/contents/events-online-events-600.png')
           ),
           Container(
             margin: EdgeInsets.only(bottom: 18.0),
@@ -568,7 +575,6 @@ class _MyTabState extends State<MyTab> with SingleTickerProviderStateMixin {
             ),
           ),
           Container(
-            margin: EdgeInsets.only(bottom: 20.0),
             child: Text(
               'Marketing & Research',
               style: TextStyle(
@@ -578,6 +584,11 @@ class _MyTabState extends State<MyTab> with SingleTickerProviderStateMixin {
                 color: Color(0xffff9124),
               ),
             ),
+          ),
+          Container(
+            margin: EdgeInsets.all(20.0),
+            padding: EdgeInsets.all(0.0),
+            child: Image.asset('assets/images/contents/events-marketing-research-600.png')
           ),
           Container(
             margin: EdgeInsets.only(bottom: 18.0),
