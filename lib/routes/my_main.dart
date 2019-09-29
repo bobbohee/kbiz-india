@@ -15,7 +15,7 @@ class MyMain extends StatelessWidget {
         title: new Text("KBIZ Bangalore"),
         backgroundColor: mainColor,
       ),
-      body: new MyTab(),
+      body: new FancyBottomBarPage(),
       drawer: Container(
         width: 300.0,
         child: Column(
