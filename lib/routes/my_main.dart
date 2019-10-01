@@ -21,40 +21,16 @@ class MyMain extends StatelessWidget {
         child: Column(
           children: <Widget>[
             Container(
-              color: mainColor,
+              color: Colors.white,
               height: 130.0,
               child: DrawerHeader(
                 margin: EdgeInsets.all(0.0),
                 padding: EdgeInsets.symmetric(
-                  vertical: 18.0,
-                  horizontal: 22.0
+                  horizontal: 30.0
                 ),
-                child: Row(
-                  children: <Widget> [
-                    Container(
-                      margin: EdgeInsets.only(right: 16.0),
-                      child: Image.asset(
-                        'assets/images/logos/color-logo-128.png',
-                        width: 80.0,
-                        height: 80.0,
-                      ),
-                    ),
-                    Expanded(
-                      child: Container(
-                        alignment: Alignment.center,
-                        child: Text(
-                          'Hello KSINDIA : )',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 18.0,
-                            fontFamily: 'Roboto',
-                            letterSpacing: 0.6,
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
-                )
+                child: Image.asset(
+                  'assets/images/logos/logo-600.png',
+                ),
               ),
             ),
             Expanded(

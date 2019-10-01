@@ -25,8 +25,8 @@ class _MySplashState extends State<MySplash> {
           Color(0xffb3e6ff),
         ],
       ),
-      photoSize: 60.0,
-      image: Image.asset('assets/images/logos/white-logo.png',),
+      photoSize: 120.0,
+      image: Image.asset('assets/images/logos/logo-600.png',),
       navigateAfterSeconds: new MyMain(),
     );
   }
