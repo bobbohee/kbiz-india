@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
 
+import './my_slide.dart';
+
 class FancyBottomBarPage extends StatefulWidget {
   static final String path = "lib/src/pages/misc/navybar.dart";
 
@@ -32,9 +34,7 @@ class _FancyBottomBarPageState extends State<FancyBottomBarPage> {
           Container(
             child: Column(
               children: <Widget>[
-                Container(
-                  child: Image.asset('assets/images/banners/short-white-banner.jpg'),
-                ),
+                MySlide(),
                 Expanded(  // 남은 공간 차지
                   child: Container(
                     child: Stack( 

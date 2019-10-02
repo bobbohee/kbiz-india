@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+//import './second.dart';
+
+BuildContext context;
+
 class MyTileItem extends StatelessWidget {
   const MyTileItem(this.title);
 
@@ -10,6 +14,7 @@ class MyTileItem extends StatelessWidget {
       return ListTile(
         title: Text(root.title),
         leading: Icon(root.icon),
+        onTap: root.onTap,
       );
     return ExpansionTile(
       key: PageStorageKey<MyTile>(root),
@@ -22,6 +27,8 @@ class MyTileItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    context = context;
+    print(context);
     return _buildTiles(title);
   }
 }
@@ -31,17 +38,30 @@ class MyTile {
     this.title,
     this.icon,
     this.children = const <MyTile>[],
+    this.onTap,
   });
 
   final String title;
   final IconData icon;
   final List<MyTile> children;
+  final GestureTapCallback onTap;
 }
+
 
 final List<MyTile> myTile = <MyTile>[
   MyTile(
     title: 'Home / About Us',
     icon: Icons.home,
+    onTap: () {
+      print('object');
+      print(context);
+      // Navigator.push(
+      //   context, 
+      //   MaterialPageRoute(
+      //     builder: (context) => SecondRoute()
+      //   )
+      // );
+    }
   ),
   MyTile(
     title: 'Corporate Consulting',
