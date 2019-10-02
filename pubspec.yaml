@@ -21,6 +21,9 @@ flutter:
   uses-material-design: true
   assets:
     - lib/routes/
+    - lib/routes/homes/
+    - lib/routes/events/
+    - lib/routes/navigations/
     - assets/images/logos/
     - assets/images/banners/
     - assets/images/contents/

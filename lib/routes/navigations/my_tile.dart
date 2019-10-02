@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
 
-//import './second.dart';
-
-BuildContext context;
-
 class MyTileItem extends StatelessWidget {
   const MyTileItem(this.title);
 
@@ -54,13 +50,6 @@ final List<MyTile> myTile = <MyTile>[
     icon: Icons.home,
     onTap: () {
       print('object');
-      print(context);
-      // Navigator.push(
-      //   context, 
-      //   MaterialPageRoute(
-      //     builder: (context) => SecondRoute()
-      //   )
-      // );
     }
   ),
   MyTile(

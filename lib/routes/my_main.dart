@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import './my_tab.dart';
-import './my_tile.dart';
+import './navigations/my_tab.dart';
+import './navigations/my_tile.dart';
 
 final Color mainColor = Color(0xff22b6ff);
 
@@ -12,10 +12,10 @@ class MyMain extends StatelessWidget {
 
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text("KBIZ Bangalore"),
+        title: new Text("KBIZ India"),
         backgroundColor: mainColor,
       ),
-      body: new FancyBottomBarPage(),
+      body: new MyTab(),
       drawer: Container(
         width: 300.0,
         child: Column(

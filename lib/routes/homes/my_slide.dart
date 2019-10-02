@@ -5,6 +5,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 final List<String> imgList = ['1', '2', '3', '4', '5'];
 
 class MySlide extends StatelessWidget {
+  
   @override
   Widget build(BuildContext context) {
 
