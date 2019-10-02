@@ -1,16 +1,30 @@
 import 'package:flutter/material.dart';
 
+import '../home_route.dart';
+import '../events_route.dart';
+import '../news_route.dart';
+import '../contact_us_route.dart';
+
 class MyTileItem extends StatelessWidget {
-  const MyTileItem(this.title);
+  const MyTileItem(this.title, this.context);
 
   final MyTile title;
+  final BuildContext context;
 
   Widget _buildTiles(MyTile root) {
     if (root.children.isEmpty)
       return ListTile(
         title: Text(root.title),
         leading: Icon(root.icon),
-        onTap: root.onTap,
+        onTap: () {
+          Navigator.pop(context);
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => root.pushFile,
+            )
+          );
+        },
       );
     return ExpansionTile(
       key: PageStorageKey<MyTile>(root),
@@ -24,7 +38,6 @@ class MyTileItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     context = context;
-    print(context);
     return _buildTiles(title);
   }
 }
@@ -34,23 +47,20 @@ class MyTile {
     this.title,
     this.icon,
     this.children = const <MyTile>[],
-    this.onTap,
+    this.pushFile,
   });
 
   final String title;
   final IconData icon;
   final List<MyTile> children;
-  final GestureTapCallback onTap;
+  final Object pushFile;
 }
-
 
 final List<MyTile> myTile = <MyTile>[
   MyTile(
     title: 'Home / About Us',
     icon: Icons.home,
-    onTap: () {
-      print('object');
-    }
+    pushFile: HomeRoute(),
   ),
   MyTile(
     title: 'Corporate Consulting',
@@ -67,7 +77,8 @@ final List<MyTile> myTile = <MyTile>[
   ),
   MyTile(
     title: 'Events',
-    icon: Icons.event
+    icon: Icons.event,
+    pushFile: EventsRoute(),
   ),
   MyTile(
     title: 'Culture',
@@ -106,10 +117,12 @@ final List<MyTile> myTile = <MyTile>[
   ),
   MyTile(
     title: 'News',
-    icon: Icons.fiber_new
+    icon: Icons.fiber_new,
+    pushFile: NewsRoute(),
   ),
   MyTile(
     title: 'Contact Us',
-    icon: Icons.format_list_bulleted
+    icon: Icons.format_list_bulleted,
+    pushFile: ContactUsRoute(),
   )
 ];

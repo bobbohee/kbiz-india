@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
 
-import '../homes/my_home.dart';
-import '../events/my_event.dart';
+import './my_home.dart';
+import './my_event.dart';
 
 class MyTab extends StatefulWidget {
   static final String path = "lib/src/pages/misc/navybar.dart";
@@ -40,33 +40,33 @@ class _MyTabState extends State<MyTab> {
         ],
       ),
       bottomNavigationBar: StreamBuilder<Object>(
-          initialData: 0,
-          stream: indexcontroller.stream,
-          builder: (context, snapshot) {
-            int cIndex = snapshot.data;
-            return MyTabNavigation(
-              currentIndex: cIndex,
-              items: <MyTabNavigationItem>[
-                MyTabNavigationItem(
-                  icon: Icon(Icons.home), 
-                  title: Text('HOME')
-                ),
-                MyTabNavigationItem(
-                  icon: Icon(Icons.event), 
-                  title: Text('EVENT')
-                ),
-                MyTabNavigationItem(
-                  icon: Icon(Icons.business), 
-                  title: Text('BUSINESS')
-                ),
-              ],
-              onItemSelected: (int value) {
-                indexcontroller.add(value);
-                pageController.jumpToPage(value);
-              },
-            );
-          }
-        ),
+        initialData: 0,
+        stream: indexcontroller.stream,
+        builder: (context, snapshot) {
+          int cIndex = snapshot.data;
+          return MyTabNavigation(
+            currentIndex: cIndex,
+            items: <MyTabNavigationItem>[
+              MyTabNavigationItem(
+                icon: Icon(Icons.home), 
+                title: Text('HOME')
+              ),
+              MyTabNavigationItem(
+                icon: Icon(Icons.event), 
+                title: Text('EVENT')
+              ),
+              MyTabNavigationItem(
+                icon: Icon(Icons.business), 
+                title: Text('BUSINESS')
+              ),
+            ],
+            onItemSelected: (int value) {
+              indexcontroller.add(value);
+              pageController.jumpToPage(value);
+            },
+          );
+        }
+      ),
     );
   }
 }
@@ -142,9 +142,9 @@ class _MyTabNavigationState extends State<MyTabNavigation> {
       padding: EdgeInsets.fromLTRB(12, 8, 12, 8),
       decoration: !isSelected ? null
         : BoxDecoration(
-            color: activeColor,
-            borderRadius: BorderRadius.all(Radius.circular(50)),
-          ),
+          color: activeColor,
+          borderRadius: BorderRadius.all(Radius.circular(50)),
+        ),
       child: ListView(
         shrinkWrap: true,
         padding: EdgeInsets.all(0),
@@ -165,11 +165,11 @@ class _MyTabNavigationState extends State<MyTabNavigation> {
                 ),
               ),
               isSelected
-                  ? DefaultTextStyle.merge(
-                      style: TextStyle(color: backgroundColor),
-                      child: item.title,
-                    )
-                  : SizedBox.shrink()
+                ? DefaultTextStyle.merge(
+                  style: TextStyle(color: backgroundColor),
+                  child: item.title,
+                )
+                : SizedBox.shrink()
             ],
           )
         ],
@@ -179,8 +179,7 @@ class _MyTabNavigationState extends State<MyTabNavigation> {
 
   @override
   Widget build(BuildContext context) {
-    activeColor =
-      (activeColor == null) ? Theme.of(context).accentColor : activeColor;
+    activeColor = (activeColor == null) ? Theme.of(context).accentColor : activeColor;
     backgroundColor = (backgroundColor == null)
       ? Theme.of(context).bottomAppBarColor
       : backgroundColor;

@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:splashscreen/splashscreen.dart';
 
-import './my_main.dart';
+import './home_route.dart';
 
-class MySplash extends StatefulWidget {
+class SplashRoute extends StatefulWidget {
   
   @override
-  _MySplashState createState() => new _MySplashState();
+  _SplashRouteState createState() => new _SplashRouteState();
 }
 
-class _MySplashState extends State<MySplash> {
+class _SplashRouteState extends State<SplashRoute> {
   
   @override
   Widget build(BuildContext context) {
@@ -27,7 +27,7 @@ class _MySplashState extends State<MySplash> {
       ),
       photoSize: 120.0,
       image: Image.asset('assets/images/logos/logo-600.png',),
-      navigateAfterSeconds: new MyMain(),
+      navigateAfterSeconds: new HomeRoute(),
     );
   }
 }

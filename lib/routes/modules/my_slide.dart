@@ -9,8 +9,7 @@ class MySlide extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    //Auto playing carousel
-    final CarouselSlider autoPlayDemo = CarouselSlider(
+    final CarouselSlider slide = CarouselSlider(
       viewportFraction: 0.9,
       aspectRatio: 2.0,
       autoPlay: true,
@@ -32,6 +31,6 @@ class MySlide extends StatelessWidget {
       ).toList(),
     );
 
-    return autoPlayDemo;
+    return slide;
   }
 }
