@@ -21,7 +21,7 @@ class MyTileItem extends StatelessWidget {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => root.pushFile,
+              builder: (context) => root.moveRoute,
             )
           );
         },
@@ -47,20 +47,20 @@ class MyTile {
     this.title,
     this.icon,
     this.children = const <MyTile>[],
-    this.pushFile,
+    this.moveRoute,
   });
 
   final String title;
   final IconData icon;
   final List<MyTile> children;
-  final Object pushFile;
+  final Object moveRoute;
 }
 
 final List<MyTile> myTile = <MyTile>[
   MyTile(
     title: 'Home / About Us',
     icon: Icons.home,
-    pushFile: HomeRoute(),
+    moveRoute: HomeRoute(),
   ),
   MyTile(
     title: 'Corporate Consulting',
@@ -78,7 +78,7 @@ final List<MyTile> myTile = <MyTile>[
   MyTile(
     title: 'Events',
     icon: Icons.event,
-    pushFile: EventsRoute(),
+    moveRoute: EventsRoute(),
   ),
   MyTile(
     title: 'Culture',
@@ -118,11 +118,11 @@ final List<MyTile> myTile = <MyTile>[
   MyTile(
     title: 'News',
     icon: Icons.fiber_new,
-    pushFile: NewsRoute(),
+    moveRoute: NewsRoute(),
   ),
   MyTile(
     title: 'Contact Us',
     icon: Icons.format_list_bulleted,
-    pushFile: ContactUsRoute(),
+    moveRoute: ContactUsRoute(),
   )
 ];

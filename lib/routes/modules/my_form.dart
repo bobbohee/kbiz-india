@@ -27,7 +27,7 @@ class MyForm extends StatelessWidget {
                     Container(
                       alignment: Alignment.centerLeft,
                       padding: EdgeInsets.only(
-                        left: 6.0,
+                        left: 2.0,
                         bottom: 10.0,
                       ),
                       child: Text(
@@ -39,42 +39,57 @@ class MyForm extends StatelessWidget {
                     ),
                     Row(
                       children: <Widget>[
-                        Container(
-                          width: 170.0,
-                          child: FormBuilderTextField(
-                            attribute: "first name",
-                            initialValue: "",
-                            keyboardType: TextInputType.text,
-                            decoration: InputDecoration(
-                              filled: true,
-                              fillColor: Colors.white,
-                              border: InputBorder.none,
-                              counterText: "First Name",
-                              counterStyle: TextStyle(
-                                fontSize: 15.0
+                        Expanded(
+                          flex: 5,
+                          child: Container(
+                            child: FormBuilderTextField(
+                              attribute: "first name",
+                              initialValue: "",
+                              keyboardType: TextInputType.text,
+                              decoration: InputDecoration(
+                                filled: true,
+                                fillColor: Colors.white,
+                                border: OutlineInputBorder(
+                                  borderRadius: BorderRadius.all(
+                                    Radius.circular(3.0)
+                                  ),
+                                ),
+                                counterText: "First Name",
+                                counterStyle: TextStyle(
+                                  fontSize: 15.0
+                                ),
+                                contentPadding: EdgeInsets.all(15.0),
                               ),
-                              contentPadding: EdgeInsets.all(15.0),
                             ),
                           ),
                         ),
                         Expanded(
-                          child: Text(""),
+                          flex: 1,
+                          child: Container(
+                            child: Text(""),
+                          ),
                         ),
-                        Container(
-                          width: 170.0,
-                          child: FormBuilderTextField(
-                            attribute: "last name",
-                            initialValue: "",
-                            keyboardType: TextInputType.text,
-                            decoration: InputDecoration(
-                              filled: true,
-                              fillColor: Colors.white,
-                              border: InputBorder.none,
-                              counterText: "Last Name",
-                              counterStyle: TextStyle(
-                                fontSize: 15.0
-                              ),  
-                              contentPadding: EdgeInsets.all(15.0),
+                        Expanded(
+                          flex: 4,
+                          child: Container(
+                            child: FormBuilderTextField(
+                              attribute: "last name",
+                              initialValue: "",
+                              keyboardType: TextInputType.text,
+                              decoration: InputDecoration(
+                                filled: true,
+                                fillColor: Colors.white,
+                                border: OutlineInputBorder(
+                                  borderRadius: BorderRadius.all(
+                                    Radius.circular(3.0)
+                                  ),
+                                ),
+                                counterText: "Last Name",
+                                counterStyle: TextStyle(
+                                  fontSize: 15.0
+                                ),  
+                                contentPadding: EdgeInsets.all(15.0),
+                              ),
                             ),
                           ),
                         ),
@@ -90,7 +105,7 @@ class MyForm extends StatelessWidget {
                     Container(
                       alignment: Alignment.centerLeft,
                       padding: EdgeInsets.only(
-                        left: 6.0,
+                        left: 2.0,
                         bottom: 10.0,
                       ),
                       child: Text(
@@ -104,11 +119,15 @@ class MyForm extends StatelessWidget {
                       child: FormBuilderTextField(
                         attribute: "email address",
                         initialValue: "",
-                        keyboardType: TextInputType.text,
+                        keyboardType: TextInputType.emailAddress,
                         decoration: InputDecoration(
                           filled: true,
                           fillColor: Colors.white,
-                          border: InputBorder.none,
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(3.0)
+                            ),
+                          ),
                           hintText: "myname@example.com",
                           contentPadding: EdgeInsets.all(15.0),
                         ),
@@ -127,7 +146,7 @@ class MyForm extends StatelessWidget {
                     Container(
                       alignment: Alignment.centerLeft,
                       padding: EdgeInsets.only(
-                        left: 6.0,
+                        left: 2.0,
                         bottom: 10.0,
                       ),
                       child: Text(
@@ -139,30 +158,38 @@ class MyForm extends StatelessWidget {
                     ),
                     Row(
                       children: <Widget>[
-                        Container(
-                          width: 110.0,
-                          child: FormBuilderTextField(
-                            attribute: "area code",
-                            initialValue: "",
-                            keyboardType: TextInputType.text,
-                            decoration: InputDecoration(
-                              filled: true,
-                              fillColor: Colors.white,
-                              border: InputBorder.none,
-                              counterText: "Area Code",
-                              counterStyle: TextStyle(
-                                fontSize: 15.0
+                        Expanded(
+                          flex: 3,
+                          child: Container(
+                            child: FormBuilderTextField(
+                              attribute: "area code",
+                              initialValue: "",
+                              keyboardType: TextInputType.number,
+                              decoration: InputDecoration(
+                                filled: true,
+                                fillColor: Colors.white,
+                                border: OutlineInputBorder(
+                                  borderRadius: BorderRadius.all(
+                                    Radius.circular(3.0)
+                                  ),
+                                ),
+                                counterText: "Area Code",
+                                counterStyle: TextStyle(
+                                  fontSize: 15.0
+                                ),
+                                contentPadding: EdgeInsets.all(15.0),
                               ),
-                              contentPadding: EdgeInsets.all(15.0),
+                              validators: [
+                                FormBuilderValidators.numeric(),
+                              ],
                             ),
-                            validators: [
-                              FormBuilderValidators.numeric(),
-                            ],
                           ),
                         ),
                         Expanded(
+                          flex: 1,
                           child: Container(
-                            height: 54.0,
+                            width: 30,
+                            height: 50,
                             alignment: Alignment.topCenter,
                             child: Text(
                               "-",
@@ -172,27 +199,33 @@ class MyForm extends StatelessWidget {
                             ),
                           ) 
                         ),
-                        Container(
-                          width: 210.0,
-                          child: FormBuilderTextField(
-                            attribute: "phone number",
-                            initialValue: "",
-                            keyboardType: TextInputType.text,
-                            decoration: InputDecoration(
-                              filled: true,
-                              fillColor: Colors.white,
-                              border: InputBorder.none,
-                              counterText: "Phone number",
-                              counterStyle: TextStyle(
-                                fontSize: 15.0
-                              ),  
-                              contentPadding: EdgeInsets.all(15.0),
+                        Expanded(
+                          flex: 6,
+                          child: Container(
+                            child: FormBuilderTextField(
+                              attribute: "phone number",
+                              initialValue: "",
+                              keyboardType: TextInputType.number,
+                              decoration: InputDecoration(
+                                filled: true,
+                                fillColor: Colors.white,
+                                border: OutlineInputBorder(
+                                  borderRadius: BorderRadius.all(
+                                    Radius.circular(3.0)
+                                  ),
+                                ),
+                                counterText: "Phone number",
+                                counterStyle: TextStyle(
+                                  fontSize: 15.0,
+                                ),  
+                                contentPadding: EdgeInsets.all(15.0),
+                              ),
+                              validators: [
+                                FormBuilderValidators.numeric(),
+                              ],
                             ),
-                            validators: [
-                              FormBuilderValidators.numeric(),
-                            ],
                           ),
-                        ),
+                        )
                       ],
                     )
                   ],
@@ -205,7 +238,7 @@ class MyForm extends StatelessWidget {
                     Container(
                       alignment: Alignment.centerLeft,
                       padding: EdgeInsets.only(
-                        left: 6.0,
+                        left: 2.0,
                         bottom: 10.0,
                       ),
                       child: Text(
@@ -226,7 +259,11 @@ class MyForm extends StatelessWidget {
                         decoration: InputDecoration(
                           filled: true,
                           fillColor: Colors.white,
-                          border: InputBorder.none,
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(3.0)
+                            ),
+                          ),
                           contentPadding: EdgeInsets.all(15.0),
                         ),
                       ),
