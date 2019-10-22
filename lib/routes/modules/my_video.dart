@@ -31,7 +31,8 @@ class _MyVideoState extends State<MyVideo> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 240.0,
+      height: 210.0,
+      margin: EdgeInsets.only(bottom: 15.0),
       child: Stack(
         children: <Widget>[
           Container(
@@ -51,8 +52,12 @@ class _MyVideoState extends State<MyVideo> {
           ),
           Container(
             alignment: Alignment.center,
-            child: FloatingActionButton(
-              backgroundColor: Colors.transparent,
+            child: IconButton(
+              icon: Icon(
+                _controller.value.isPlaying ? Icons.pause : Icons.play_arrow,
+                color: Colors.white,
+                size: 30.0,
+              ),
               onPressed: () {
                 setState(() {
                   if (_controller.value.isPlaying) {
@@ -62,11 +67,8 @@ class _MyVideoState extends State<MyVideo> {
                   }
                 });
               },
-              child: Icon(
-                _controller.value.isPlaying ? Icons.pause : Icons.play_arrow,
-              ),
-            ),
-          ),
+            ) 
+          )
         ],
       ),
     );
