@@ -6,7 +6,6 @@ class MyMenu extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     final Container menu = Container(
       width: 300.0,
       child: Column(

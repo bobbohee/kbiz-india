@@ -8,7 +8,6 @@ class MySlide extends StatelessWidget {
   
   @override
   Widget build(BuildContext context) {
-
     final CarouselSlider slide = CarouselSlider(
       viewportFraction: 0.9,
       aspectRatio: 2.0,

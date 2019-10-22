@@ -7,11 +7,15 @@ class ContactUsRoute extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text("KBIZ India"),
-        backgroundColor: Color(0xff22b6ff),
+        title: Text(
+          "K-BIZ",
+          style: TextStyle(
+            color: Color(0xff3b3b3b),
+          ),
+        ),
+        backgroundColor: Color(0xffe9e9e7),
       ),
       body: MyForm(),
       drawer: MyMenu()

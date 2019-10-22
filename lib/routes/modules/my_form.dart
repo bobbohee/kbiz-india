@@ -7,7 +7,6 @@ class MyForm extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     final ListView list = ListView(
       padding: EdgeInsets.all(26.0),
       children: <Widget>[

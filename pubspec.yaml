@@ -24,12 +24,9 @@ flutter:
   assets:
     - lib/routes/
     - lib/routes/modules/
-    - assets/videos/
     - assets/images/logos/
     - assets/images/banners/
     - assets/images/contents/
-    - assets/images/backgrounds/
-    - assets/images/tests/
   fonts:
     - family: Roboto
       fonts:
