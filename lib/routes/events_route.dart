@@ -4,6 +4,8 @@ import './modules/my_event.dart';
 import './modules/my_menu.dart';
 
 class EventsRoute extends StatelessWidget {
+  final Color mainColor = Color(0xff22b6ff);
+  final Color fontColor = Color(0xff3b3b3b);
 
   @override
   Widget build(BuildContext context) {
@@ -15,6 +17,7 @@ class EventsRoute extends StatelessWidget {
             color: Color(0xff3b3b3b),
           ),
         ),
+        iconTheme: IconThemeData(color: fontColor),
         backgroundColor: Color(0xffe9e9e7),
       ),
       body: MyEvent(),
