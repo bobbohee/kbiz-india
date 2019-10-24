@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 
-import './modules/my_event.dart';
 import './modules/my_menu.dart';
 
-class EventsRoute extends StatelessWidget {
-  final Color mainColor = Color(0xff22b6ff);
+
+class TrandExpoRoute extends StatelessWidget {
+  final Color mainColor = Color(0xff4095b6);
+  final Color subColor = Color(0xffe9e9e7);
   final Color fontColor = Color(0xff3b3b3b);
 
   @override
@@ -13,15 +14,12 @@ class EventsRoute extends StatelessWidget {
       appBar: new AppBar(
         title: Text(
           "K-BIZ",
-          style: TextStyle(
-            color: Color(0xff3b3b3b),
-          ),
+          style: TextStyle(color: fontColor),
         ),
         iconTheme: IconThemeData(color: fontColor),
-        backgroundColor: Color(0xffe9e9e7),
+        backgroundColor: subColor,
       ),
-      body: MyEvent(),
-      drawer: MyMenu()
+      drawer: MyMenu(),
     );
   }
 }

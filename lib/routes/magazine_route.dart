@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 import './modules/my_menu.dart';
 
 class MagazineRoute extends StatelessWidget {
-  final Color mainColor = Color(0xff22b6ff);
+  final Color mainColor = Color(0xff4095b6);
+  final Color subColor = Color(0xffe9e9e7);
   final Color fontColor = Color(0xff3b3b3b);
 
   @override
@@ -13,11 +14,11 @@ class MagazineRoute extends StatelessWidget {
         title: Text(
           "K-BIZ",
           style: TextStyle(
-            color: Color(0xff3b3b3b),
+            color: fontColor,
           ),
         ),
         iconTheme: IconThemeData(color: fontColor),
-        backgroundColor: Color(0xffe9e9e7),
+        backgroundColor: subColor,
       ),
       drawer: MyMenu()
     );

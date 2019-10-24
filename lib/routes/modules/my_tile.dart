@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 import 'package:splash/routes/home_route.dart';
-import 'package:splash/routes/events_route.dart';
+import 'package:splash/routes/about_us_route.dart';
+import 'package:splash/routes/trand_expo_route.dart';
+import 'package:splash/routes/biz_events_route.dart';
 import 'package:splash/routes/biz_tour_route.dart';
 import 'package:splash/routes/magazine_route.dart';
-import 'package:splash/routes/management_route.dart';
-import 'package:splash/routes/contact_us_route.dart';
 
 class MyTileItem extends StatelessWidget {
   const MyTileItem(this.title, this.context);
@@ -13,11 +13,25 @@ class MyTileItem extends StatelessWidget {
   final MyTile title;
   final BuildContext context;
 
+
   Widget _buildTiles(MyTile root) {
+    final Color mainColor = Color(0xff4095b6);
+    final Color subColor = Color(0xffe9e9e7);
+    final Color fontColor = Color(0xff3b3b3b);
+
     if (root.children.isEmpty)
       return ListTile(
-        title: Text(root.title),
-        leading: Icon(root.icon),
+        title: Text(
+          root.title,
+          style: TextStyle(
+            fontSize: 15.5,
+            color: fontColor,
+          ),
+        ),
+        leading: Icon(
+          root.icon,
+          color: fontColor,
+        ),
         onTap: () {
           Navigator.pop(context);
           Navigator.push(
@@ -30,8 +44,17 @@ class MyTileItem extends StatelessWidget {
       );
     return ExpansionTile(
       key: PageStorageKey<MyTile>(root),
-      title: Text(root.title),
-      leading: Icon(root.icon),
+      title: Text(
+        root.title,
+        style: TextStyle(
+          fontSize: 15.5,
+          color: fontColor,
+        ),
+      ),
+      leading: Icon(
+        root.icon,
+        color: fontColor,
+      ),
       children: root.children.map<Widget>(_buildTiles).toList(),
       backgroundColor: Color(0xfff2f2f2),
     );
@@ -60,9 +83,14 @@ class MyTile {
 
 final List<MyTile> myTile = <MyTile>[
   MyTile(
-    title: 'about us',
+    title: 'home',
     icon: Icons.home,
     moveRoute: HomeRoute(),
+  ),
+  MyTile(
+    title: 'about us',
+    icon: Icons.nature_people,
+    moveRoute: AboutUsRoute(),
   ),
   MyTile(
     title: 'management',
@@ -80,7 +108,7 @@ final List<MyTile> myTile = <MyTile>[
   MyTile(
     title: 'trade & expo',
     icon: Icons.language,
-    moveRoute: EventsRoute(),
+    moveRoute: TrandExpoRoute(),
   ),
   MyTile(
     title: 'corporate consulting',
@@ -125,7 +153,7 @@ final List<MyTile> myTile = <MyTile>[
   MyTile(
     title: 'bit events',
     icon: Icons.event,
-    moveRoute: EventsRoute(),
+    moveRoute: BizEventsRoute(),
   ),
   MyTile(
     title: 'magazine',
