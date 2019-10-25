@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import './my_tile.dart';
+import 'package:splash/routes/modules/my_tile.dart';
 
 class MyMenu extends StatelessWidget {
 
@@ -27,8 +27,8 @@ class MyMenu extends StatelessWidget {
               alignment: Alignment.topLeft,
               color: Color(0xfffafafa),
               child: ListView.builder(
-                itemBuilder: (BuildContext context, int index) => MyTileItem(myTile[index], context),
-                itemCount: myTile.length,
+                itemBuilder: (BuildContext context, int index) => MyTile(myTileItem[index], context),
+                itemCount: myTileItem.length,
                 padding: EdgeInsets.all(0.0),
               ),
             ),

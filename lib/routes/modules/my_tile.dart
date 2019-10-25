@@ -9,19 +9,18 @@ import 'package:splash/routes/biz_tour_route.dart';
 import 'package:splash/routes/biz_events_route.dart';
 import 'package:splash/routes/magazine_route.dart';
 
-class MyTileItem extends StatelessWidget {
-  const MyTileItem(this.title, this.context);
+class MyTile extends StatelessWidget {
+  const MyTile(this.title, this.context);
 
-  final MyTile title;
+  final MyTileItem title;
   final BuildContext context;
 
-
-  Widget _buildTiles(MyTile root) {
+  Widget _buildTiles(MyTileItem root) {
     final Color mainColor = Color(0xff4095b6);
     final Color subColor = Color(0xffe9e9e7);
     final Color fontColor = Color(0xff3b3b3b);
 
-    if (root.children.isEmpty)
+    if (root.children.isEmpty) {
       return ListTile(
         title: Text(
           root.title,
@@ -44,8 +43,9 @@ class MyTileItem extends StatelessWidget {
           );
         },
       );
+    }
     return ExpansionTile(
-      key: PageStorageKey<MyTile>(root),
+      key: PageStorageKey<MyTileItem>(root),
       title: Text(
         root.title,
         style: TextStyle(
@@ -69,102 +69,100 @@ class MyTileItem extends StatelessWidget {
   }
 }
 
-class MyTile {
-  MyTile({
+class MyTileItem {
+  MyTileItem({
     this.title,
     this.icon,
-    this.children = const <MyTile>[],
+    this.children = const <MyTileItem>[],
     this.moveRoute,
   });
 
   final String title;
   final IconData icon;
-  final List<MyTile> children;
+  final List<MyTileItem> children;
   final Object moveRoute;
 }
 
-final List<MyTile> myTile = <MyTile>[
-  MyTile(
-    title: 'home',
+final List<MyTileItem> myTileItem = <MyTileItem>[
+  MyTileItem(
+    title: 'Home',
     icon: Icons.home,
     moveRoute: HomeRoute(),
   ),
-  MyTile(
-    title: 'about us',
+  MyTileItem(
+    title: 'About Us',
     icon: Icons.nature_people,
     moveRoute: AboutUsRoute(),
   ),
-  MyTile(
-    title: 'management',
+  MyTileItem(
+    title: 'Management',
     icon: Icons.supervisor_account,
-    moveRoute: ManagementRoute(),  
-    /*
-    children: <MyTile>[
-      MyTile(title: 'Market Research'),
-      MyTile(title: 'Market Establishments'),
-      MyTile(title: 'Business Registraions'),
-      MyTile(title: 'Business Budgeting'),
-      MyTile(title: 'HR Services'),
-      MyTile(title: 'Company / Product Launch'),
-      MyTile(title: 'Accounts & Tax Management'),
+    children: <MyTileItem>[
+      MyTileItem(
+        title: 'Market Research',
+        moveRoute: ManagementRoute(),  
+      ),
+      MyTileItem(title: 'Market Establishments'),
+      MyTileItem(title: 'Business Registraions'),
+      MyTileItem(title: 'Business Budgeting'),
+      MyTileItem(title: 'HR Services'),
+      MyTileItem(title: 'Company / Product Launch'),
+      MyTileItem(title: 'Accounts & Tax Management'),
     ],
-    */
   ),
-  MyTile(
-    title: 'trade & expo',
+  MyTileItem(
+    title: 'Trade & Expo',
     icon: Icons.language,
     moveRoute: TrandExpoRoute(),
   ),
-  MyTile(
-    title: 'corporate consulting',
+  MyTileItem(
+    title: 'Corporate Consulting',
     icon: Icons.business,
     moveRoute: CorporateConsultingRoute(),
-    /*
-    children: <MyTile>[
-      MyTile(
+    children: <MyTileItem>[
+      MyTileItem(
         title: 'Language',
-        children: <MyTile>[
-          MyTile(title: 'Korean'),
-          MyTile(title: 'Handi'),
-          MyTile(title: 'English'),
+        children: <MyTileItem>[
+          MyTileItem(title: 'Handi'),
+          MyTileItem(title: 'English'),
+          MyTileItem(title: 'Korean'),
         ],
       ),
-      MyTile(
+      MyTileItem(
         title: 'Dance',
-        children: <MyTile>[
-          MyTile(title: 'K-pop'),
-          MyTile(title: 'Indian Dance'),
+        children: <MyTileItem>[
+          MyTileItem(title: 'K-pop'),
+          MyTileItem(title: 'Indian Dance'),
         ],
       ),
-      MyTile(
+      MyTileItem(
         title: 'Sport',
-        children: <MyTile>[
-          MyTile(title: 'Taekwondo'),
-          MyTile(title: 'Toga'),
+        children: <MyTileItem>[
+          MyTileItem(title: 'Taekwondo'),
+          MyTileItem(title: 'Toga'),
         ],
       ),
-      MyTile(
+      MyTileItem(
         title: 'Food',
-        children: <MyTile>[
-          MyTile(title: 'Korean'),
-          MyTile(title: 'Indian'),
+        children: <MyTileItem>[
+          MyTileItem(title: 'Korean'),
+          MyTileItem(title: 'Indian'),
         ],
       ),
     ],
-    */
   ),
-  MyTile(
-    title: 'biz tour',
+  MyTileItem(
+    title: 'Biz Tour',
     icon: Icons.flight,
     moveRoute: BizTourRoute(),
   ),
-  MyTile(
-    title: 'bit events',
+  MyTileItem(
+    title: 'Bit Events',
     icon: Icons.event,
     moveRoute: BizEventsRoute(),
   ),
-  MyTile(
-    title: 'magazine',
+  MyTileItem(
+    title: 'Magazine',
     icon: Icons.photo_album,
     moveRoute: MagazineRoute(),
   ),
