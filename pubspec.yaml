@@ -26,6 +26,9 @@ flutter:
     - lib/routes/modules/
     - assets/images/logos/
     - assets/images/banners/
+    - assets/images/banners/home/
+    - assets/images/banners/management/
+    - assets/images/banners/corporate_consulting/
     - assets/images/contents/
   fonts:
     - family: Roboto

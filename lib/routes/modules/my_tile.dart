@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 
 import 'package:splash/routes/home_route.dart';
 import 'package:splash/routes/about_us_route.dart';
+import 'package:splash/routes/management_route.dart';
 import 'package:splash/routes/trand_expo_route.dart';
-import 'package:splash/routes/biz_events_route.dart';
+import 'package:splash/routes/corporate_consulting_route.dart';
 import 'package:splash/routes/biz_tour_route.dart';
+import 'package:splash/routes/biz_events_route.dart';
 import 'package:splash/routes/magazine_route.dart';
 
 class MyTileItem extends StatelessWidget {
@@ -95,6 +97,8 @@ final List<MyTile> myTile = <MyTile>[
   MyTile(
     title: 'management',
     icon: Icons.supervisor_account,
+    moveRoute: ManagementRoute(),  
+    /*
     children: <MyTile>[
       MyTile(title: 'Market Research'),
       MyTile(title: 'Market Establishments'),
@@ -104,6 +108,7 @@ final List<MyTile> myTile = <MyTile>[
       MyTile(title: 'Company / Product Launch'),
       MyTile(title: 'Accounts & Tax Management'),
     ],
+    */
   ),
   MyTile(
     title: 'trade & expo',
@@ -113,6 +118,8 @@ final List<MyTile> myTile = <MyTile>[
   MyTile(
     title: 'corporate consulting',
     icon: Icons.business,
+    moveRoute: CorporateConsultingRoute(),
+    /*
     children: <MyTile>[
       MyTile(
         title: 'Language',
@@ -144,6 +151,7 @@ final List<MyTile> myTile = <MyTile>[
         ],
       ),
     ],
+    */
   ),
   MyTile(
     title: 'biz tour',
