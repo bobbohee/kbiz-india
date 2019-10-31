@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:splash/routes/modules/my_management_contents.dart';
+
 class MyManagement extends StatelessWidget {
 
   @override
@@ -11,19 +13,9 @@ class MyManagement extends StatelessWidget {
     return Container( 
       child: ListView(
         children: <Widget>[
-          Container(
-            color: Colors.white,
-            height: 250.0,
-            alignment: Alignment.center,
-            child: Text(
-              'Image',
-              style: TextStyle(fontSize: 30.0),
-            ),
-          ),
-          Container(
-            child: Image.asset('assets/images/banners/management/banner2.png'),
-          ),
-          Container(),
+          Container(child: Image.asset('assets/images/banners/management/banner1.png')),
+          Container(child: Image.asset('assets/images/banners/management/banner2.png')),
+          MyManagementContents(),
         ],
       )
     );

@@ -118,15 +118,15 @@ final List<MyTileItem> myTileItem = <MyTileItem>[
   MyTileItem(
     title: 'Corporate Consulting',
     icon: Icons.business,
-    moveRoute: CorporateConsultingRoute(),
     children: <MyTileItem>[
       MyTileItem(
         title: 'Language',
-        children: <MyTileItem>[
-          MyTileItem(title: 'Handi'),
-          MyTileItem(title: 'English'),
-          MyTileItem(title: 'Korean'),
-        ],
+        moveRoute: CorporateConsultingRoute(),
+        // children: <MyTileItem>[
+        //   MyTileItem(title: 'Handi'),
+        //   MyTileItem(title: 'English'),
+        //   MyTileItem(title: 'Korean'),
+        // ],
       ),
       MyTileItem(
         title: 'Dance',
