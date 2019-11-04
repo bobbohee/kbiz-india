@@ -12,7 +12,7 @@ class MyManagement extends StatelessWidget {
     return Container( 
       child: ListView(
         children: <Widget>[
-          Container(child: Image.asset('assets/images/banners/management/banner1.png')),
+          Container(child: Image.asset('assets/images/banners/management/banner1.jpg')),
           Container(child: Image.asset('assets/images/banners/management/banner2.png')),
           MyManagementContents(),
         ],
