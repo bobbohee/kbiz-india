@@ -14,15 +14,13 @@ class CorporateConsultingRoute  extends StatelessWidget {
       appBar: AppBar(
         title: Text(
           "K-BIZ",
-          style: TextStyle(
-            color: fontColor,
-          ),
+          style: TextStyle(color: fontColor),
         ),
         iconTheme: IconThemeData(color: fontColor),
         backgroundColor: subColor,
       ),
       body: MyCorporateConsulting(),
-      drawer: MyMenu()
+      drawer: MyMenu(),
     );
   }
 }

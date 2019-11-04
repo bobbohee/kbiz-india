@@ -2,12 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
 
 class MyForm extends StatelessWidget {
-  
   final GlobalKey<FormBuilderState> _fbKey = GlobalKey<FormBuilderState>();
 
   @override
   Widget build(BuildContext context) {
-    final ListView list = ListView(
+    return ListView(
       padding: EdgeInsets.all(26.0),
       children: <Widget>[
         FormBuilder(
@@ -31,9 +30,7 @@ class MyForm extends StatelessWidget {
                       ),
                       child: Text(
                         "Your Name",
-                        style: TextStyle(
-                          fontSize: 17.0,
-                        ),
+                        style: TextStyle(fontSize: 17.0),
                       ),
                     ),
                     Row(
@@ -54,9 +51,7 @@ class MyForm extends StatelessWidget {
                                   ),
                                 ),
                                 counterText: "First Name",
-                                counterStyle: TextStyle(
-                                  fontSize: 15.0
-                                ),
+                                counterStyle: TextStyle(fontSize: 15.0),
                                 contentPadding: EdgeInsets.all(15.0),
                               ),
                             ),
@@ -84,9 +79,7 @@ class MyForm extends StatelessWidget {
                                   ),
                                 ),
                                 counterText: "Last Name",
-                                counterStyle: TextStyle(
-                                  fontSize: 15.0
-                                ),  
+                                counterStyle: TextStyle(fontSize: 15.0),  
                                 contentPadding: EdgeInsets.all(15.0),
                               ),
                             ),
@@ -109,9 +102,7 @@ class MyForm extends StatelessWidget {
                       ),
                       child: Text(
                         "Your E-mail Address",
-                        style: TextStyle(
-                          fontSize: 17.0,
-                        ),
+                        style: TextStyle(fontSize: 17.0),
                       ),
                     ),
                     Container(
@@ -130,9 +121,7 @@ class MyForm extends StatelessWidget {
                           hintText: "myname@example.com",
                           contentPadding: EdgeInsets.all(15.0),
                         ),
-                        validators: [
-                          FormBuilderValidators.email(),
-                        ],
+                        validators: [FormBuilderValidators.email()],
                       ),
                     ),
                   ],
@@ -150,9 +139,7 @@ class MyForm extends StatelessWidget {
                       ),
                       child: Text(
                         "Pnone Number",
-                        style: TextStyle(
-                          fontSize: 17.0,
-                        ),
+                        style: TextStyle(fontSize: 17.0),
                       ),
                     ),
                     Row(
@@ -173,14 +160,10 @@ class MyForm extends StatelessWidget {
                                   ),
                                 ),
                                 counterText: "Area Code",
-                                counterStyle: TextStyle(
-                                  fontSize: 15.0
-                                ),
+                                counterStyle: TextStyle(fontSize: 15.0),
                                 contentPadding: EdgeInsets.all(15.0),
                               ),
-                              validators: [
-                                FormBuilderValidators.numeric(),
-                              ],
+                              validators: [FormBuilderValidators.numeric()],
                             ),
                           ),
                         ),
@@ -192,9 +175,7 @@ class MyForm extends StatelessWidget {
                             alignment: Alignment.topCenter,
                             child: Text(
                               "-",
-                              style: TextStyle(
-                                fontSize: 24.0,
-                              ),
+                              style: TextStyle(fontSize: 24.0),
                             ),
                           ) 
                         ),
@@ -214,14 +195,10 @@ class MyForm extends StatelessWidget {
                                   ),
                                 ),
                                 counterText: "Phone number",
-                                counterStyle: TextStyle(
-                                  fontSize: 15.0,
-                                ),  
+                                counterStyle: TextStyle(fontSize: 15.0),  
                                 contentPadding: EdgeInsets.all(15.0),
                               ),
-                              validators: [
-                                FormBuilderValidators.numeric(),
-                              ],
+                              validators: [FormBuilderValidators.numeric()],
                             ),
                           ),
                         )
@@ -242,9 +219,7 @@ class MyForm extends StatelessWidget {
                       ),
                       child: Text(
                         "Leave Your Message",
-                        style: TextStyle(
-                          fontSize: 17.0,
-                        ),
+                        style: TextStyle(fontSize: 17.0),
                       ),
                     ),
                     Container(
@@ -295,6 +270,5 @@ class MyForm extends StatelessWidget {
         ),
       ]
     );
-    return list;
   } 
 }

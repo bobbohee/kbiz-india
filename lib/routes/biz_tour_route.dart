@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import './modules/my_menu.dart';
+import 'package:splash/routes/modules/my_menu.dart';
 
 class BizTourRoute extends StatelessWidget {
   final Color mainColor = Color(0xff4095b6);

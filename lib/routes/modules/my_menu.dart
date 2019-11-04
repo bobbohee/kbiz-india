@@ -6,8 +6,7 @@ class MyMenu extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
-    final Container menu = Container(
+    return Container(
       width: 300.0,
       child: Column(
         children: <Widget>[
@@ -36,7 +35,5 @@ class MyMenu extends StatelessWidget {
         ]
       ),
     );
-
-    return menu;
   }
 }

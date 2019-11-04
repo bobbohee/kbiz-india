@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
-import './modules/my_menu.dart';
-
+import 'package:splash/routes/modules/my_menu.dart';
 
 class TrandExpoRoute extends StatelessWidget {
   final Color mainColor = Color(0xff4095b6);
@@ -10,8 +9,8 @@ class TrandExpoRoute extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
-      appBar: new AppBar(
+    return Scaffold(
+      appBar: AppBar(
         title: Text(
           "K-BIZ",
           style: TextStyle(color: fontColor),

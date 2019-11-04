@@ -4,7 +4,7 @@ class MyHome extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Container home = Container( 
+    return Container( 
       child: ListView(
         children: <Widget>[
           Image.asset('assets/images/banners/home/banner1.png'),
@@ -13,7 +13,5 @@ class MyHome extends StatelessWidget {
         ],
       )
     );
-
-    return home;
   }
 }

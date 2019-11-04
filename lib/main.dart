@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 
-import './routes/splash_route.dart';
+import 'package:splash/routes/splash_route.dart';
 
 void main() => runApp(
-  new MaterialApp(
-    home: new SplashRoute()
-  )
+  MaterialApp(home: SplashRoute())
 );

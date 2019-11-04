@@ -97,18 +97,7 @@ final List<MyTileItem> myTileItem = <MyTileItem>[
   MyTileItem(
     title: 'Management',
     icon: Icons.supervisor_account,
-    children: <MyTileItem>[
-      MyTileItem(
-        title: 'Market Research',
-        moveRoute: ManagementRoute(),  
-      ),
-      MyTileItem(title: 'Market Establishments'),
-      MyTileItem(title: 'Business Registraions'),
-      MyTileItem(title: 'Business Budgeting'),
-      MyTileItem(title: 'HR Services'),
-      MyTileItem(title: 'Company / Product Launch'),
-      MyTileItem(title: 'Accounts & Tax Management'),
-    ],
+    moveRoute: ManagementRoute(),  
   ),
   MyTileItem(
     title: 'Trade & Expo',
@@ -118,38 +107,7 @@ final List<MyTileItem> myTileItem = <MyTileItem>[
   MyTileItem(
     title: 'Corporate Consulting',
     icon: Icons.business,
-    children: <MyTileItem>[
-      MyTileItem(
-        title: 'Language',
-        moveRoute: CorporateConsultingRoute(),
-        // children: <MyTileItem>[
-        //   MyTileItem(title: 'Handi'),
-        //   MyTileItem(title: 'English'),
-        //   MyTileItem(title: 'Korean'),
-        // ],
-      ),
-      MyTileItem(
-        title: 'Dance',
-        children: <MyTileItem>[
-          MyTileItem(title: 'K-pop'),
-          MyTileItem(title: 'Indian Dance'),
-        ],
-      ),
-      MyTileItem(
-        title: 'Sport',
-        children: <MyTileItem>[
-          MyTileItem(title: 'Taekwondo'),
-          MyTileItem(title: 'Toga'),
-        ],
-      ),
-      MyTileItem(
-        title: 'Food',
-        children: <MyTileItem>[
-          MyTileItem(title: 'Korean'),
-          MyTileItem(title: 'Indian'),
-        ],
-      ),
-    ],
+    moveRoute: CorporateConsultingRoute(),
   ),
   MyTileItem(
     title: 'Biz Tour',

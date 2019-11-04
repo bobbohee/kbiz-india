@@ -14,15 +14,13 @@ class ManagementRoute extends StatelessWidget {
       appBar: AppBar(
         title: Text(
           "K-BIZ",
-          style: TextStyle(
-            color: fontColor,
-          ),
+          style: TextStyle(color: fontColor),
         ),
         iconTheme: IconThemeData(color: fontColor),
         backgroundColor: subColor,
       ),
       body: MyManagement(),
-      drawer: MyMenu()
+      drawer: MyMenu(),
     );
   }
 }

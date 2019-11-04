@@ -1,17 +1,21 @@
 import 'package:flutter/material.dart';
 
-import './my_video.dart';
-
 class MyEvent extends StatelessWidget {
+  final Color mainColor = Color(0xff4095b6);
+  final Color subColor = Color(0xffe9e9e7);
+  final Color fontColor = Color(0xff3b3b3b);
+
+  final Color fontPointColor = Color(0xffff9124);
+  final Color fontItalicColor = Color(0xff333333);
+  final Color fontBlackColor = Color(0xff000000);
   
   @override
   Widget build(BuildContext context) {
+
     return Container(
-      // color: Colors.white,
       child: ListView(
         padding: EdgeInsets.all(20.0),
         children: <Widget>[
-          // MyVideo(),
           Container(
             child: Text(
               'Buyer-Seller Meetings',
@@ -19,7 +23,7 @@ class MyEvent extends StatelessWidget {
                 fontSize: 28.0,
                 fontFamily: "PTSerif",
                 letterSpacing: 0.1,
-                color: Color(0xffff9124),
+                color: fontPointColor,
               ),
             ),
           ),
@@ -37,7 +41,7 @@ class MyEvent extends StatelessWidget {
                 fontFamily: "Roboto",
                 fontStyle: FontStyle.italic,
                 letterSpacing: 0.1,
-                color: Color(0xff333333),
+                color: fontItalicColor,
               ),
             ),
           ),
@@ -49,7 +53,7 @@ class MyEvent extends StatelessWidget {
                 fontSize: 16.0,
                 fontFamily: "Roboto",
                 letterSpacing: 0.1,
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),
@@ -61,7 +65,7 @@ class MyEvent extends StatelessWidget {
                 fontSize: 16.0,
                 fontFamily: "Roboto",
                 letterSpacing: 0.1,
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),
@@ -74,7 +78,7 @@ class MyEvent extends StatelessWidget {
                 fontFamily: "Roboto",
                 fontWeight: FontWeight.w700,
                 letterSpacing: 0.2,
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),
@@ -86,7 +90,7 @@ class MyEvent extends StatelessWidget {
                 fontSize: 16.0,
                 fontFamily: "Roboto",
                 letterSpacing: 0.1,
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),
@@ -98,7 +102,7 @@ class MyEvent extends StatelessWidget {
                 fontSize: 16.0,
                 fontFamily: "Roboto",
                 letterSpacing: 0.1,
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),
@@ -110,7 +114,7 @@ class MyEvent extends StatelessWidget {
               style: TextStyle(
                 fontSize: 16.0,
                 fontFamily: "Roboto",
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),
@@ -122,7 +126,7 @@ class MyEvent extends StatelessWidget {
               style: TextStyle(
                 fontSize: 16.0,
                 fontFamily: "Roboto",
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),
@@ -134,7 +138,7 @@ class MyEvent extends StatelessWidget {
               style: TextStyle(
                 fontSize: 16.0,
                 fontFamily: "Roboto",
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),
@@ -146,7 +150,7 @@ class MyEvent extends StatelessWidget {
               style: TextStyle(
                 fontSize: 16.0,
                 fontFamily: "Roboto",
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),
@@ -158,7 +162,7 @@ class MyEvent extends StatelessWidget {
               style: TextStyle(
                 fontSize: 16.0,
                 fontFamily: "Roboto",
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),
@@ -170,7 +174,7 @@ class MyEvent extends StatelessWidget {
               style: TextStyle(
                 fontSize: 16.0,
                 fontFamily: "Roboto",
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),
@@ -183,7 +187,7 @@ class MyEvent extends StatelessWidget {
                 fontFamily: "Roboto",
                 fontWeight: FontWeight.w700,
                 letterSpacing: 0.1,
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),
@@ -195,7 +199,7 @@ class MyEvent extends StatelessWidget {
                 fontSize: 16.0,
                 fontFamily: "Roboto",
                 letterSpacing: 0.1,
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),
@@ -207,7 +211,7 @@ class MyEvent extends StatelessWidget {
               style: TextStyle(
                 fontSize: 16.0,
                 fontFamily: "Roboto",
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),
@@ -219,7 +223,7 @@ class MyEvent extends StatelessWidget {
               style: TextStyle(
                 fontSize: 16.0,
                 fontFamily: "Roboto",
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),
@@ -231,7 +235,7 @@ class MyEvent extends StatelessWidget {
               style: TextStyle(
                 fontSize: 16.0,
                 fontFamily: "Roboto",
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),
@@ -243,7 +247,7 @@ class MyEvent extends StatelessWidget {
               style: TextStyle(
                 fontSize: 16.0,
                 fontFamily: "Roboto",
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),
@@ -255,7 +259,7 @@ class MyEvent extends StatelessWidget {
               style: TextStyle(
                 fontSize: 16.0,
                 fontFamily: "Roboto",
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),
@@ -267,7 +271,7 @@ class MyEvent extends StatelessWidget {
               style: TextStyle(
                 fontSize: 16.0,
                 fontFamily: "Roboto",
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),
@@ -279,7 +283,7 @@ class MyEvent extends StatelessWidget {
               style: TextStyle(
                 fontSize: 16.0,
                 fontFamily: "Roboto",
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),
@@ -291,7 +295,7 @@ class MyEvent extends StatelessWidget {
                 fontSize: 16.0,
                 fontFamily: "Roboto",
                 letterSpacing: 0.1,
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),
@@ -303,7 +307,7 @@ class MyEvent extends StatelessWidget {
               style: TextStyle(
                 fontSize: 16.0,
                 fontFamily: "Roboto",
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),
@@ -315,7 +319,7 @@ class MyEvent extends StatelessWidget {
               style: TextStyle(
                 fontSize: 16.0,
                 fontFamily: "Roboto",
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),
@@ -327,7 +331,7 @@ class MyEvent extends StatelessWidget {
               style: TextStyle(
                 fontSize: 16.0,
                 fontFamily: "Roboto",
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),
@@ -339,7 +343,7 @@ class MyEvent extends StatelessWidget {
               style: TextStyle(
                 fontSize: 16.0,
                 fontFamily: "Roboto",
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),
@@ -351,7 +355,7 @@ class MyEvent extends StatelessWidget {
               style: TextStyle(
                 fontSize: 16.0,
                 fontFamily: "Roboto",
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),
@@ -363,7 +367,7 @@ class MyEvent extends StatelessWidget {
               style: TextStyle(
                 fontSize: 16.0,
                 fontFamily: "Roboto",
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),
@@ -375,7 +379,7 @@ class MyEvent extends StatelessWidget {
               style: TextStyle(
                 fontSize: 16.0,
                 fontFamily: "Roboto",
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),
@@ -387,7 +391,7 @@ class MyEvent extends StatelessWidget {
                 fontSize: 16.0,
                 fontFamily: "Roboto",
                 letterSpacing: 0.1,
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),
@@ -399,7 +403,7 @@ class MyEvent extends StatelessWidget {
               style: TextStyle(
                 fontSize: 16.0,
                 fontFamily: "Roboto",
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),
@@ -411,7 +415,7 @@ class MyEvent extends StatelessWidget {
               style: TextStyle(
                 fontSize: 16.0,
                 fontFamily: "Roboto",
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),
@@ -423,7 +427,7 @@ class MyEvent extends StatelessWidget {
               style: TextStyle(
                 fontSize: 16.0,
                 fontFamily: "Roboto",
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),
@@ -435,7 +439,7 @@ class MyEvent extends StatelessWidget {
               style: TextStyle(
                 fontSize: 16.0,
                 fontFamily: "Roboto",
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),
@@ -446,7 +450,7 @@ class MyEvent extends StatelessWidget {
                 fontSize: 28.0,
                 fontFamily: "PTSerif",
                 letterSpacing: 0.1,
-                color: Color(0xffff9124),
+                color: fontPointColor,
               ),
             ),
           ),
@@ -464,7 +468,7 @@ class MyEvent extends StatelessWidget {
                 fontFamily: "Roboto",
                 fontStyle: FontStyle.italic,
                 letterSpacing: 0.1,
-                color: Color(0xff333333),
+                color: fontItalicColor,
               ),
             ),
           ),
@@ -476,7 +480,7 @@ class MyEvent extends StatelessWidget {
                 fontSize: 16.0,
                 fontFamily: "Roboto",
                 letterSpacing: 0.1,
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),
@@ -488,7 +492,7 @@ class MyEvent extends StatelessWidget {
                 fontSize: 16.0,
                 fontFamily: "Roboto",
                 letterSpacing: 0.1,
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),
@@ -499,7 +503,7 @@ class MyEvent extends StatelessWidget {
                 fontSize: 28.0,
                 fontFamily: "PTSerif",
                 letterSpacing: 0.1,
-                color: Color(0xffff9124),
+                color: fontPointColor,
               ),
             ),
           ),
@@ -517,7 +521,7 @@ class MyEvent extends StatelessWidget {
                 fontFamily: "Roboto",
                 fontStyle: FontStyle.italic,
                 letterSpacing: 0.1,
-                color: Color(0xff333333),
+                color: fontItalicColor,
               ),
             ),
           ),
@@ -529,7 +533,7 @@ class MyEvent extends StatelessWidget {
                 fontSize: 16.0,
                 fontFamily: "Roboto",
                 letterSpacing: 0.1,
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),
@@ -540,7 +544,7 @@ class MyEvent extends StatelessWidget {
                 fontSize: 28.0,
                 fontFamily: "PTSerif",
                 letterSpacing: 0.1,
-                color: Color(0xffff9124),
+                color: fontPointColor,
               ),
             ),
           ),
@@ -558,7 +562,7 @@ class MyEvent extends StatelessWidget {
                 fontFamily: "Roboto",
                 fontStyle: FontStyle.italic,
                 letterSpacing: 0.1,
-                color: Color(0xff333333),
+                color: fontItalicColor,
               ),
             ),
           ),
@@ -570,7 +574,7 @@ class MyEvent extends StatelessWidget {
                 fontSize: 16.0,
                 fontFamily: "Roboto",
                 letterSpacing: 0.1,
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),
@@ -582,7 +586,7 @@ class MyEvent extends StatelessWidget {
               style: TextStyle(
                 fontSize: 16.0,
                 fontFamily: "Roboto",
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),
@@ -594,7 +598,7 @@ class MyEvent extends StatelessWidget {
               style: TextStyle(
                 fontSize: 16.0,
                 fontFamily: "Roboto",
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),
@@ -606,7 +610,7 @@ class MyEvent extends StatelessWidget {
               style: TextStyle(
                 fontSize: 16.0,
                 fontFamily: "Roboto",
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),
@@ -618,7 +622,7 @@ class MyEvent extends StatelessWidget {
               style: TextStyle(
                 fontSize: 16.0,
                 fontFamily: "Roboto",
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),
@@ -630,7 +634,7 @@ class MyEvent extends StatelessWidget {
               style: TextStyle(
                 fontSize: 16.0,
                 fontFamily: "Roboto",
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),
@@ -642,7 +646,7 @@ class MyEvent extends StatelessWidget {
               style: TextStyle(
                 fontSize: 16.0,
                 fontFamily: "Roboto",
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),
@@ -654,7 +658,7 @@ class MyEvent extends StatelessWidget {
               style: TextStyle(
                 fontSize: 16.0,
                 fontFamily: "Roboto",
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),
@@ -666,7 +670,7 @@ class MyEvent extends StatelessWidget {
               style: TextStyle(
                 fontSize: 16.0,
                 fontFamily: "Roboto",
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),
@@ -678,7 +682,7 @@ class MyEvent extends StatelessWidget {
               style: TextStyle(
                 fontSize: 16.0,
                 fontFamily: "Roboto",
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),
@@ -690,7 +694,7 @@ class MyEvent extends StatelessWidget {
                 fontSize: 16.0,
                 fontFamily: "Roboto",
                 letterSpacing: 0.1,
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),
@@ -702,7 +706,7 @@ class MyEvent extends StatelessWidget {
               style: TextStyle(
                 fontSize: 16.0,
                 fontFamily: "Roboto",
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),
@@ -714,7 +718,7 @@ class MyEvent extends StatelessWidget {
               style: TextStyle(
                 fontSize: 16.0,
                 fontFamily: "Roboto",
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),
@@ -726,7 +730,7 @@ class MyEvent extends StatelessWidget {
               style: TextStyle(
                 fontSize: 16.0,
                 fontFamily: "Roboto",
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),
@@ -737,7 +741,7 @@ class MyEvent extends StatelessWidget {
               style: TextStyle(
                 fontSize: 16.0,
                 fontFamily: "Roboto",
-                color: Color(0xff000000),
+                color: fontBlackColor,
               ),
             ),
           ),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import './modules/my_menu.dart';
+import 'package:splash/routes/modules/my_menu.dart';
 
 class MagazineRoute extends StatelessWidget {
   final Color mainColor = Color(0xff4095b6);
@@ -13,14 +13,12 @@ class MagazineRoute extends StatelessWidget {
       appBar: AppBar(
         title: Text(
           "K-BIZ",
-          style: TextStyle(
-            color: fontColor,
-          ),
+          style: TextStyle(color: fontColor),
         ),
         iconTheme: IconThemeData(color: fontColor),
         backgroundColor: subColor,
       ),
-      drawer: MyMenu()
+      drawer: MyMenu(),
     );
   }
 }

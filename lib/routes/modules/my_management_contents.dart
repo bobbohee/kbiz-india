@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 
 class MyManagementContents extends StatelessWidget {
+  final Color mainColor = Color(0xff4095b6);
+  final Color subColor = Color(0xffe9e9e7);
+  final Color fontColor = Color(0xff3b3b3b);
+
+  final Color fontPointColor = Color(0xff3b92b4);
+  final Color fontBlackColor = Color(0xff000000);
 
   @override
   Widget build(BuildContext context) {
-    final Color mainColor = Color(0xff4095b6);
-    final Color subColor = Color(0xffe9e9e7);
-    final Color fontColor = Color(0xff000000);
-    final Color fontPointColor = Color(0xff3b92b4);
 
     return Container(
       color: Colors.white,
@@ -26,7 +28,7 @@ class MyManagementContents extends StatelessWidget {
                     fontSize: 17.0,
                     fontFamily: "Roboto",
                     letterSpacing: 0.1,
-                    color: fontColor
+                    color: fontBlackColor
                   ),
                 ),
                 Text(
@@ -35,7 +37,7 @@ class MyManagementContents extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 17.0,
                     fontFamily: "Roboto",
-                    color: fontColor
+                    color: fontBlackColor
                   ),
                 ),
               ],
@@ -66,7 +68,7 @@ class MyManagementContents extends StatelessWidget {
                         style: TextStyle(
                           fontSize: 16.0,
                           fontFamily: "Roboto",
-                          color: fontColor
+                          color: fontBlackColor
                         ),
                       ),
                       Text(
@@ -74,7 +76,7 @@ class MyManagementContents extends StatelessWidget {
                         style: TextStyle(
                           fontSize: 16.0,
                           fontFamily: "Roboto",
-                          color: fontColor
+                          color: fontBlackColor
                         ),
                       ),
                     ],
@@ -108,7 +110,7 @@ class MyManagementContents extends StatelessWidget {
                         style: TextStyle(
                           fontSize: 16.0,
                           fontFamily: "Roboto",
-                          color: fontColor
+                          color: fontBlackColor
                         ),
                       ),
                       Text(
@@ -116,7 +118,7 @@ class MyManagementContents extends StatelessWidget {
                         style: TextStyle(
                           fontSize: 16.0,
                           fontFamily: "Roboto",
-                          color: fontColor
+                          color: fontBlackColor
                         ),
                       ),
                     ],
@@ -150,7 +152,7 @@ class MyManagementContents extends StatelessWidget {
                         style: TextStyle(
                           fontSize: 16.0,
                           fontFamily: "Roboto",
-                          color: fontColor
+                          color: fontBlackColor
                         ),
                       ),
                       Text(
@@ -158,7 +160,7 @@ class MyManagementContents extends StatelessWidget {
                         style: TextStyle(
                           fontSize: 16.0,
                           fontFamily: "Roboto",
-                          color: fontColor
+                          color: fontBlackColor
                         ),
                       ),
                     ],
@@ -192,7 +194,7 @@ class MyManagementContents extends StatelessWidget {
                         style: TextStyle(
                           fontSize: 16.0,
                           fontFamily: "Roboto",
-                          color: fontColor
+                          color: fontBlackColor
                         ),
                       ),
                       Text(
@@ -200,7 +202,7 @@ class MyManagementContents extends StatelessWidget {
                         style: TextStyle(
                           fontSize: 16.0,
                           fontFamily: "Roboto",
-                          color: fontColor
+                          color: fontBlackColor
                         ),
                       ),
                     ],
@@ -234,7 +236,7 @@ class MyManagementContents extends StatelessWidget {
                         style: TextStyle(
                           fontSize: 16.0,
                           fontFamily: "Roboto",
-                          color: fontColor
+                          color: fontBlackColor
                         ),
                       ),
                       Text(
@@ -242,7 +244,7 @@ class MyManagementContents extends StatelessWidget {
                         style: TextStyle(
                           fontSize: 16.0,
                           fontFamily: "Roboto",
-                          color: fontColor
+                          color: fontBlackColor
                         ),
                       ),
                     ],
@@ -275,7 +277,7 @@ class MyManagementContents extends StatelessWidget {
                         style: TextStyle(
                           fontSize: 16.0,
                           fontFamily: "Roboto",
-                          color: fontColor
+                          color: fontBlackColor
                         ),
                       ),
                       Text(
@@ -283,7 +285,7 @@ class MyManagementContents extends StatelessWidget {
                         style: TextStyle(
                           fontSize: 16.0,
                           fontFamily: "Roboto",
-                          color: fontColor
+                          color: fontBlackColor
                         ),
                       ),
                     ],
