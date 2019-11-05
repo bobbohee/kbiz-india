@@ -135,7 +135,7 @@ class MyManagementContents extends StatelessWidget {
                 Container(
                   width: 100.0,
                   child: Text(
-                    'OKTA Global Marketer Program',
+                    'Marketer Program',
                     style: TextStyle(
                       fontSize: 18.0,
                       fontFamily: "Roboto",
@@ -212,48 +212,6 @@ class MyManagementContents extends StatelessWidget {
             ),
           ),
           // * content 5
-          Container(
-            margin: EdgeInsets.only(bottom: 20.0),
-            child: Row(
-              children: <Widget>[
-                Container(
-                  width: 100.0,
-                  child: Text(
-                    'Agri-food Export Promotion Program',
-                    style: TextStyle(
-                      fontSize: 18.0,
-                      fontFamily: "Roboto",
-                      color: fontPointColor
-                    ),
-                  ),
-                ),
-                Expanded(
-                  child: Column(
-                    children: <Widget>[
-                      Text(
-                        'Business Organizer: Agro-Trade & Exhibition Center',
-                        textAlign: TextAlign.left,
-                        style: TextStyle(
-                          fontSize: 16.0,
-                          fontFamily: "Roboto",
-                          color: fontBlackColor
-                        ),
-                      ),
-                      Text(
-                        'Business Outline: The project that expands the export market of Korean agricultural products through consultation on local laws and systems as difficult problems. K-BIZ has been selected as an official agency in the local area, and as an expert in the agricultural and food sector, we provide various services to Korean companies, including market research and customs law advice.',
-                        style: TextStyle(
-                          fontSize: 16.0,
-                          fontFamily: "Roboto",
-                          color: fontBlackColor
-                        ),
-                      ),
-                    ],
-                  ),
-                )
-              ],
-            ),
-          ),
-          // * content 6
           Container(
             child: Row(
               children: <Widget>[

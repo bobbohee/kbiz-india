@@ -17,16 +17,9 @@ class MyCorporateConsulting extends StatelessWidget {
             child: Image.asset('assets/images/banners/corporate_consulting/banner2.jpg'),
           ),
           Container(
-            child: Column(
-              children: <Widget>[
-                Image.asset('assets/images/banners/corporate_consulting/banner3-1.png'),
-                Image.asset('assets/images/banners/corporate_consulting/banner3-2.png'),
-                Image.asset('assets/images/banners/corporate_consulting/banner3-3.png'),
-                Image.asset('assets/images/banners/corporate_consulting/banner3-4.png'),
-                Image.asset('assets/images/banners/corporate_consulting/banner3-5.png'),
-                Image.asset('assets/images/banners/corporate_consulting/banner3-6.png'),
-              ],
-            ),
+            color: Colors.white,
+            padding: EdgeInsets.all(20.0),
+            child: Image.asset('assets/images/banners/corporate_consulting/banner3.png'),
           ),
         ],
       )
