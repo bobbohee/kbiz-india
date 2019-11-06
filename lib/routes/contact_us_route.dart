@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:splash/routes/modules/my_form.dart';
 import 'package:splash/routes/modules/my_menu.dart';
+import 'package:splash/routes/modules/my_contact_us.dart';
 
 class ContactUsRoute extends StatelessWidget {
   final Color mainColor = Color(0xff4095b6);
@@ -19,7 +19,7 @@ class ContactUsRoute extends StatelessWidget {
         iconTheme: IconThemeData(color: fontColor),
         backgroundColor: subColor,
       ),
-      body: MyForm(),
+      body: MyContactUs(),
       drawer: MyMenu(),
     );
   }

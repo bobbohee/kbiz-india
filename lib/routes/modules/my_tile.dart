@@ -8,6 +8,7 @@ import 'package:splash/routes/corporate_consulting_route.dart';
 import 'package:splash/routes/biz_tour_route.dart';
 import 'package:splash/routes/biz_events_route.dart';
 import 'package:splash/routes/magazine_route.dart';
+import 'package:splash/routes/contact_us_route.dart';
 
 class MyTile extends StatelessWidget {
   const MyTile(this.title, this.context);
@@ -123,5 +124,10 @@ final List<MyTileItem> myTileItem = <MyTileItem>[
     title: 'Magazine',
     icon: Icons.photo_album,
     moveRoute: MagazineRoute(),
+  ),
+  MyTileItem(
+    title: 'Contact Us',
+    icon: Icons.call,
+    moveRoute: ContactUsRoute(),
   ),
 ];
