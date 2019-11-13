@@ -8,10 +8,8 @@ class MyHome extends StatelessWidget {
       child: ListView(
         children: <Widget>[
           Image.asset('assets/images/banners/home/banner1.png'),
-          Image.asset('assets/images/banners/home/banner2.png'),
-          Image.asset('assets/images/banners/home/banner3.png'),
         ],
-      )
+      ),
     );
   }
 }

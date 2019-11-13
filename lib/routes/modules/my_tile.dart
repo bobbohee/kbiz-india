@@ -3,9 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:splash/routes/home_route.dart';
 import 'package:splash/routes/about_us_route.dart';
 import 'package:splash/routes/management_route.dart';
-import 'package:splash/routes/trand_expo_route.dart';
 import 'package:splash/routes/corporate_consulting_route.dart';
-import 'package:splash/routes/biz_tour_route.dart';
 import 'package:splash/routes/biz_events_route.dart';
 import 'package:splash/routes/magazine_route.dart';
 import 'package:splash/routes/contact_us_route.dart';
@@ -40,11 +38,12 @@ class MyTile extends StatelessWidget {
             context,
             MaterialPageRoute(
               builder: (context) => root.moveRoute,
-            )
+            ),
           );
         },
       );
-    }
+    } // if (root.children.isEmpty)
+
     return ExpansionTile(
       key: PageStorageKey<MyTileItem>(root),
       title: Text(
@@ -68,21 +67,23 @@ class MyTile extends StatelessWidget {
     context = context;
     return _buildTiles(title);
   }
-}
+} // MyTile
 
 class MyTileItem {
-  MyTileItem({
-    this.title,
-    this.icon,
-    this.children = const <MyTileItem>[],
-    this.moveRoute,
-  });
-
   final String title;
   final IconData icon;
   final List<MyTileItem> children;
   final Object moveRoute;
-}
+  
+  MyTileItem(
+    {
+      this.title,
+      this.icon,
+      this.children = const <MyTileItem>[],
+      this.moveRoute,
+    }
+  );
+} // MyTileItem
 
 final List<MyTileItem> myTileItem = <MyTileItem>[
   MyTileItem(
@@ -101,22 +102,12 @@ final List<MyTileItem> myTileItem = <MyTileItem>[
     moveRoute: ManagementRoute(),  
   ),
   MyTileItem(
-    title: 'Trade & Expo',
-    icon: Icons.language,
-    moveRoute: TrandExpoRoute(),
-  ),
-  MyTileItem(
     title: 'Corporate Consulting',
     icon: Icons.business,
     moveRoute: CorporateConsultingRoute(),
   ),
   MyTileItem(
-    title: 'Biz Tour',
-    icon: Icons.flight,
-    moveRoute: BizTourRoute(),
-  ),
-  MyTileItem(
-    title: 'Bit Events',
+    title: 'Biz Events',
     icon: Icons.event,
     moveRoute: BizEventsRoute(),
   ),

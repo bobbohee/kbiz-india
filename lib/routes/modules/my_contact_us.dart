@@ -50,7 +50,7 @@ class MyContactUs extends StatelessWidget {
           // * content 3
           MyContactUsForm(),
         ],
-      )
+      ),
     );
   }
 }

@@ -11,8 +11,8 @@ class MyMenu extends StatelessWidget {
       child: Column(
         children: <Widget>[
           Container(
-            color: Colors.white,
             height: 130.0,
+            color: Colors.white,
             child: DrawerHeader(
               margin: EdgeInsets.all(0.0),
               padding: EdgeInsets.symmetric(
@@ -23,8 +23,8 @@ class MyMenu extends StatelessWidget {
           ),
           Expanded(
             child: Container(
-              alignment: Alignment.topLeft,
               color: Color(0xfffafafa),
+              alignment: Alignment.topLeft,
               child: ListView.builder(
                 itemBuilder: (BuildContext context, int index) => MyTile(myTileItem[index], context),
                 itemCount: myTileItem.length,
@@ -32,7 +32,7 @@ class MyMenu extends StatelessWidget {
               ),
             ),
           ),
-        ]
+        ],
       ),
     );
   }

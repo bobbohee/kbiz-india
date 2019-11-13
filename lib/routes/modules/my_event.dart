@@ -5,32 +5,26 @@ class MyEvent extends StatelessWidget {
   final Color subColor = Color(0xffe9e9e7);
   final Color fontColor = Color(0xff3b3b3b);
 
-  final Color fontPointColor = Color(0xffff9124);
   final Color fontItalicColor = Color(0xff333333);
   final Color fontBlackColor = Color(0xff000000);
   
   @override
   Widget build(BuildContext context) {
-
     return Container(
       child: ListView(
         padding: EdgeInsets.all(20.0),
         children: <Widget>[
           Container(
+            margin: EdgeInsets.only(bottom: 18.0),
             child: Text(
               'Buyer-Seller Meetings',
               style: TextStyle(
                 fontSize: 28.0,
                 fontFamily: "PTSerif",
                 letterSpacing: 0.1,
-                color: fontPointColor,
+                color: mainColor,
               ),
             ),
-          ),
-          Container(
-            margin: EdgeInsets.all(20.0),
-            padding: EdgeInsets.all(0.0),
-            child: Image.asset('assets/images/contents/events-buyer-seller-meeting-600.png')
           ),
           Container(
             margin: EdgeInsets.only(bottom: 18.0),
@@ -48,7 +42,7 @@ class MyEvent extends StatelessWidget {
           Container(
             margin: EdgeInsets.only(bottom: 14.0),
             child: Text(
-              'K-Biz Events believes in understanding your goals, whether your objective is to educate or inform, increase market share or launch a new product or expand to a new territory. We help you to achieve goals by defining B2B marketing research and industrial research and increasing your return on investment by formulating strategic marketing plans.',
+              'K-BIZ Events believes in understanding your goals, whether your objective is to educate or inform, increase market share or launch a new product or expand to a new territory. We help you to achieve goals by defining B2B marketing research and industrial research and increasing your return on investment by formulating strategic marketing plans.',
               style: TextStyle(
                 fontSize: 16.0,
                 fontFamily: "Roboto",
@@ -181,7 +175,7 @@ class MyEvent extends StatelessWidget {
           Container(
             margin: EdgeInsets.only(bottom: 14.0),
             child: Text(
-              'K-Biz Events Scope of Work',
+              'K-BIZ Events Scope of Work',
               style: TextStyle(
                 fontSize: 17.0,
                 fontFamily: "Roboto",
@@ -444,20 +438,16 @@ class MyEvent extends StatelessWidget {
             ),
           ),
           Container(
+            margin: EdgeInsets.only(bottom: 18.0),
             child: Text(
               'Corporate Events',
               style: TextStyle(
                 fontSize: 28.0,
                 fontFamily: "PTSerif",
                 letterSpacing: 0.1,
-                color: fontPointColor,
+                color: mainColor,
               ),
             ),
-          ),
-          Container(
-            margin: EdgeInsets.all(20.0),
-            padding: EdgeInsets.all(0.0),
-            child: Image.asset('assets/images/contents/events-corporate-events-600.png')
           ),
           Container(
             margin: EdgeInsets.only(bottom: 18.0),
@@ -497,20 +487,16 @@ class MyEvent extends StatelessWidget {
             ),
           ),
           Container(
+            margin: EdgeInsets.only(bottom: 18.0),
             child: Text(
               'Online Events',
               style: TextStyle(
                 fontSize: 28.0,
                 fontFamily: "PTSerif",
                 letterSpacing: 0.1,
-                color: fontPointColor,
+                color: mainColor,
               ),
             ),
-          ),
-          Container(
-            margin: EdgeInsets.all(20.0),
-            padding: EdgeInsets.all(0.0),
-            child: Image.asset('assets/images/contents/events-online-events-600.png')
           ),
           Container(
             margin: EdgeInsets.only(bottom: 18.0),
@@ -528,7 +514,7 @@ class MyEvent extends StatelessWidget {
           Container(
             margin: EdgeInsets.only(bottom: 22.0),
             child: Text(
-              'In a world where time is of the essence and technology the pinnacle of any successful marketing campaign; K-Biz Events takes B2B marketing to a whole new level - Virtual meetings. We arrange potential clients for your business to interact with you on an online (Internet) platform saving your marketing cost and time.',
+              'In a world where time is of the essence and technology the pinnacle of any successful marketing campaign; K-BIZ Events takes B2B marketing to a whole new level - Virtual meetings. We arrange potential clients for your business to interact with you on an online (Internet) platform saving your marketing cost and time.',
               style: TextStyle(
                 fontSize: 16.0,
                 fontFamily: "Roboto",
@@ -538,25 +524,21 @@ class MyEvent extends StatelessWidget {
             ),
           ),
           Container(
+            margin: EdgeInsets.only(bottom: 18.0),
             child: Text(
               'Marketing & Research',
               style: TextStyle(
                 fontSize: 28.0,
                 fontFamily: "PTSerif",
                 letterSpacing: 0.1,
-                color: fontPointColor,
+                color: mainColor,
               ),
             ),
           ),
           Container(
-            margin: EdgeInsets.all(20.0),
-            padding: EdgeInsets.all(0.0),
-            child: Image.asset('assets/images/contents/events-marketing-research-600.png')
-          ),
-          Container(
             margin: EdgeInsets.only(bottom: 18.0),
             child: Text(
-              "K-Biz Events' local and international marketing and research strategies have been benchmarked for different market segments.",
+              "K-BIZ Events' local and international marketing and research strategies have been benchmarked for different market segments.",
               style: TextStyle(
                 fontSize: 17,
                 fontFamily: "Roboto",
@@ -569,7 +551,7 @@ class MyEvent extends StatelessWidget {
           Container(
             margin: EdgeInsets.only(bottom: 14.0),
             child: Text(
-              "K-Biz Events' Marketing division is equipped with a team of industry-experienced marketers who are responsible for creating Event/Organizational Marketing Plans and linking it to the company's overall Marketing Strategy. Marketing Division plays a vital role in converting each project into a success by the core value-added services of creating networking opportunities, client satisfaction and sales & business growth.",
+              "K-BIZ Events' Marketing division is equipped with a team of industry-experienced marketers who are responsible for creating Event/Organizational Marketing Plans and linking it to the company's overall Marketing Strategy. Marketing Division plays a vital role in converting each project into a success by the core value-added services of creating networking opportunities, client satisfaction and sales & business growth.",
               style: TextStyle(
                 fontSize: 16.0,
                 fontFamily: "Roboto",
@@ -689,7 +671,7 @@ class MyEvent extends StatelessWidget {
           Container(
             margin: EdgeInsets.only(bottom: 12.0),
             child: Text(
-              "K-Biz Events' Research division performs extensive research of local and international market segments to create company or product-specific related research reports for our clients. Our reports, both summary and detailed ones, assist our clients to :",
+              "K-BIZ Events' Research division performs extensive research of local and international market segments to create company or product-specific related research reports for our clients. Our reports, both summary and detailed ones, assist our clients to :",
               style: TextStyle(
                 fontSize: 16.0,
                 fontFamily: "Roboto",
@@ -746,7 +728,7 @@ class MyEvent extends StatelessWidget {
             ),
           ),
         ],
-      )
+      ),
     );
   }
 }
