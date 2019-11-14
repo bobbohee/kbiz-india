@@ -15,9 +15,11 @@ class MyTile extends StatelessWidget {
   final BuildContext context;
 
   Widget _buildTiles(MyTileItem root) {
-    final Color mainColor = Color(0xff4095b6);
-    final Color subColor = Color(0xffe9e9e7);
-    final Color fontColor = Color(0xff3b3b3b);
+    final Color blueColor = Color(0xff4095b6);
+    final Color lightGrayColor = Color(0xfffafafa);
+    final Color darkGrayColor = Color(0xffe9e9e9);
+    final Color lightBlackColor = Color(0xff333333);
+    final Color darkBlackColor = Color(0xff000000);
 
     if (root.children.isEmpty) {
       return ListTile(
@@ -25,12 +27,12 @@ class MyTile extends StatelessWidget {
           root.title,
           style: TextStyle(
             fontSize: 15.5,
-            color: fontColor,
+            color: lightBlackColor,
           ),
         ),
         leading: Icon(
           root.icon,
-          color: fontColor,
+          color: lightBlackColor,
         ),
         onTap: () {
           Navigator.pop(context);
@@ -50,15 +52,15 @@ class MyTile extends StatelessWidget {
         root.title,
         style: TextStyle(
           fontSize: 15.5,
-          color: fontColor,
+          color: lightBlackColor,
         ),
       ),
       leading: Icon(
         root.icon,
-        color: fontColor,
+        color: lightBlackColor,
       ),
       children: root.children.map<Widget>(_buildTiles).toList(),
-      backgroundColor: Color(0xfff2f2f2),
+      backgroundColor: darkGrayColor,
     );
   }
 

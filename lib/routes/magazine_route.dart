@@ -3,9 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:splash/routes/modules/my_menu.dart';
 
 class MagazineRoute extends StatelessWidget {
-  final Color mainColor = Color(0xff4095b6);
-  final Color subColor = Color(0xffe9e9e7);
-  final Color fontColor = Color(0xff3b3b3b);
+  final Color blueColor = Color(0xff4095b6);
+  final Color lightGrayColor = Color(0xfffafafa);
+  final Color darkGrayColor = Color(0xffe9e9e9);
+  final Color lightBlackColor = Color(0xff333333);
+  final Color darkBlackColor = Color(0xff000000);
 
   @override
   Widget build(BuildContext context) {
@@ -13,10 +15,10 @@ class MagazineRoute extends StatelessWidget {
       appBar: AppBar(
         title: Text(
           "K-BIZ",
-          style: TextStyle(color: fontColor),
+          style: TextStyle(color: lightBlackColor),
         ),
-        iconTheme: IconThemeData(color: fontColor),
-        backgroundColor: subColor,
+        iconTheme: IconThemeData(color: lightBlackColor),
+        backgroundColor: darkGrayColor,
       ),
       drawer: MyMenu(),
     );

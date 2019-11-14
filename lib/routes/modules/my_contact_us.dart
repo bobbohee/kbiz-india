@@ -3,20 +3,22 @@ import 'package:flutter/material.dart';
 import 'package:splash/routes/modules/my_contact_us_form.dart';
 
 class MyContactUs extends StatelessWidget {
-  final Color mainColor = Color(0xff4095b6);
-  final Color subColor = Color(0xffe9e9e7);
-  final Color fontColor = Color(0xff3b3b3b);
+  final Color blueColor = Color(0xff4095b6);
+  final Color lightGrayColor = Color(0xfffafafa);
+  final Color darkGrayColor = Color(0xffe9e9e9);
+  final Color lightBlackColor = Color(0xff333333);
+  final Color darkBlackColor = Color(0xff000000);
 
   @override
   Widget build(BuildContext context) {
-    return Container( 
+    return Container(       
+      color: lightGrayColor,
       child: ListView(
         children: <Widget>[
           // * content 1
           Image.asset('assets/images/banners/contact_us/banner1.png'),
           // * content 2
           Container(
-            color: Colors.white,
             padding: EdgeInsets.symmetric(
               vertical: 20.0,
               horizontal: 10.0
@@ -30,7 +32,7 @@ class MyContactUs extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 19,
                       fontFamily: "Roboto",
-                      color: mainColor,
+                      color: blueColor,
                     ),
                   ),
                 ),
@@ -40,7 +42,7 @@ class MyContactUs extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 19,
                       fontFamily: "Roboto",
-                      color: mainColor,
+                      color: blueColor,
                     ),
                   ),
                 ),

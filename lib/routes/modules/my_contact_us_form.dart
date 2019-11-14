@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 
 class MyContactUsForm extends StatelessWidget {
-  final Color mainColor = Color(0xff4095b6);
-  final Color subColor = Color(0xffe9e9e7);
-  final Color fontColor = Color(0xff3b3b3b);
-
-  final Color fontGrayColor = Color(0xffcccccc);
+  final Color blueColor = Color(0xff4095b6);
+  final Color lightGrayColor = Color(0xfffafafa);
+  final Color darkGrayColor = Color(0xffe9e9e9);
+  final Color lightBlackColor = Color(0xff333333);
+  final Color darkBlackColor = Color(0xff000000);
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Color(0xff1e1e1e),
+      color: darkGrayColor,
       padding: EdgeInsets.all(20.0),
       child: Column(
         children: <Widget>[
@@ -22,75 +22,55 @@ class MyContactUsForm extends StatelessWidget {
                 fontSize: 19,
                 fontFamily: "Roboto",
                 fontWeight: FontWeight.w500,
-                color: mainColor,
+                color: darkBlackColor,
               ),
             ),
           ),
-          Row(
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Container(
-                width: 100.0,
                 child: Text(
-                  'K-BIZ India',
+                  'KS consultancy services PVT. LTD',
                   style: TextStyle(
-                    fontSize: 18.0,
+                    fontSize: 17.0,
                     fontFamily: "Roboto",
-                    color: Colors.white,
-                    decoration: TextDecoration.underline,
+                    fontWeight: FontWeight.w500,
+                    color: darkBlackColor,
                   ),
                 ),
               ),
-              Expanded(
-                child: Container(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      Container(
-                        child: Text(
-                          'KS consultancy services PVT. LTD',
-                          style: TextStyle(
-                            fontSize: 17.0,
-                            fontFamily: "Roboto",
-                            fontWeight: FontWeight.w500,
-                            color: fontGrayColor,
-                          ),
-                        ),
-                      ),
-                      Container(
-                        margin: EdgeInsets.only(top: 7.5),
-                        child: Text(
-                          'Office : 4th Floor, 490/8, F Block, Sahakar Nagar, Byatarayanapura, Bengaluru, Karnataka 560092, India',
-                          style: TextStyle(
-                            fontSize: 16.0,
-                            fontFamily: "Roboto",
-                            color: fontGrayColor,
-                            height: 1.25,
-                          ),
-                        ),
-                      ),
-                      Container(
-                        margin: EdgeInsets.only(top: 2.5),
-                        child: Text(
-                          'Internet phone : 080-4161-5026',
-                          style: TextStyle(
-                            fontSize: 16.0,
-                            fontFamily: "Roboto",
-                            color: fontGrayColor,
-                          ),
-                        ),
-                      ),
-                      Container(
-                        margin: EdgeInsets.only(top: 2.5),
-                        child: Text(
-                          'Site Adress : www.kbizindia.com',
-                          style: TextStyle(
-                            fontSize: 16.0,
-                            fontFamily: "Roboto",
-                            color: fontGrayColor,
-                          ),
-                        ),
-                      ),
-                    ],
+              Container(
+                margin: EdgeInsets.only(top: 7.5),
+                child: Text(
+                  'Office : 4th Floor, 490/8, F Block, Sahakar Nagar, Byatarayanapura, Bengaluru, Karnataka 560092, India',
+                  style: TextStyle(
+                    fontSize: 16.0,
+                    fontFamily: "Roboto",
+                    color: darkBlackColor,
+                    height: 1.25,
+                  ),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(top: 2.5),
+                child: Text(
+                  'Internet Phone : 080-4161-5026',
+                  style: TextStyle(
+                    fontSize: 16.0,
+                    fontFamily: "Roboto",
+                    color: darkBlackColor,
+                  ),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(top: 2.5),
+                child: Text(
+                  'Site Address : www.kbizindia.com',
+                  style: TextStyle(
+                    fontSize: 16.0,
+                    fontFamily: "Roboto",
+                    color: darkBlackColor,
                   ),
                 ),
               ),
