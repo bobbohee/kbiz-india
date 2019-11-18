@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:splash/routes/modules/my_corporate_consulting_contents.dart';
+
 class MyCorporateConsulting extends StatelessWidget {
   final Color blueColor = Color(0xff4095b6);
   final Color lightGrayColor = Color(0xfffafafa);
@@ -15,11 +17,7 @@ class MyCorporateConsulting extends StatelessWidget {
         children: <Widget>[
           Container(child: Image.asset('assets/images/banners/corporate_consulting/banner1.jpg')),
           Container(child: Image.asset('assets/images/banners/corporate_consulting/banner2.jpg')),
-          Container(
-            color: Colors.white,
-            padding: EdgeInsets.all(20.0),
-            child: Image.asset('assets/images/banners/corporate_consulting/banner3.png'),
-          ),
+          MyCorporateConsultingContents()
         ],
       ),
     );

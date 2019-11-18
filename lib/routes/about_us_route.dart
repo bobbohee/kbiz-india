@@ -14,7 +14,7 @@ class AboutUsRoute extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "K-BIZ",
+          "K-BIZ About Us",
           style: TextStyle(color: lightBlackColor),
         ),
         iconTheme: IconThemeData(color: lightBlackColor),

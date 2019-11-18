@@ -15,7 +15,7 @@ class BizEventsRoute extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "K-BIZ",
+          "K-BIZ Biz Events",
           style: TextStyle(color: lightBlackColor),
         ),
         iconTheme: IconThemeData(color: lightBlackColor),
