@@ -16,8 +16,12 @@ class MyCorporateConsulting extends StatelessWidget {
       child: ListView(
         children: <Widget>[
           Container(child: Image.asset('assets/images/banners/corporate_consulting/banner1.jpg')),
-          Container(child: Image.asset('assets/images/banners/corporate_consulting/banner2.jpg')),
-          MyCorporateConsultingContents()
+          MyCorporateConsultingContents(),
+          Container(
+            color: Colors.white,
+            padding: EdgeInsets.symmetric(vertical: 15.0),
+            child: Image.asset('assets/images/banners/corporate_consulting/banner2-1.png'),
+          ),
         ],
       ),
     );

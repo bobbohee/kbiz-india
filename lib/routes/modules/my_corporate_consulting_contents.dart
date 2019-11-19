@@ -26,9 +26,9 @@ class MyCorporateConsultingContents extends StatelessWidget {
                     'Established Corporation',
                     style: TextStyle(
                       fontSize: 28.0,
-                      fontFamily: "PTSerif",
+                      fontFamily: "Roboto",
                       letterSpacing: 0.1,
-                      color: blueColor
+                      color: darkBlackColor
                     ),
                   ),
                 ), 
@@ -53,7 +53,7 @@ class MyCorporateConsultingContents extends StatelessWidget {
                   decoration: BoxDecoration(
                     border: Border.all(
                       width: 1.8,
-                      color: lightBlackColor,
+                      color: blueColor,
                     ),
                     borderRadius: new BorderRadius.circular(5.0),
                   ),
@@ -64,7 +64,7 @@ class MyCorporateConsultingContents extends StatelessWidget {
                       fontFamily: "Roboto",
                       fontWeight: FontWeight.w500,
                       letterSpacing: 0.1,
-                      color: lightBlackColor
+                      color: blueColor
                     ),
                   ),
                 ), 
@@ -77,7 +77,7 @@ class MyCorporateConsultingContents extends StatelessWidget {
                       fontFamily: "Roboto",
                       fontWeight: FontWeight.w500,
                       letterSpacing: 0.2,
-                      color: lightBlackColor,
+                      color: blueColor,
                       decoration: TextDecoration.underline,
                     ),
                   ),
@@ -197,9 +197,9 @@ class MyCorporateConsultingContents extends StatelessWidget {
                     'Real Estate',
                     style: TextStyle(
                       fontSize: 28.0,
-                      fontFamily: "PTSerif",
+                      fontFamily: "Roboto",
                       letterSpacing: 0.1,
-                      color: blueColor
+                      color: darkBlackColor
                     ),
                   ),
                 ), 
@@ -330,9 +330,9 @@ class MyCorporateConsultingContents extends StatelessWidget {
                     'Man Power',
                     style: TextStyle(
                       fontSize: 28.0,
-                      fontFamily: "PTSerif",
+                      fontFamily: "Roboto",
                       letterSpacing: 0.1,
-                      color: blueColor
+                      color: darkBlackColor
                     ),
                   ),
                 ),
@@ -345,7 +345,7 @@ class MyCorporateConsultingContents extends StatelessWidget {
                   decoration: BoxDecoration(
                     border: Border.all(
                       width: 1.8,
-                      color: lightBlackColor,
+                      color: blueColor,
                     ),
                     borderRadius: BorderRadius.circular(5.0),
                   ),
@@ -356,7 +356,7 @@ class MyCorporateConsultingContents extends StatelessWidget {
                       fontFamily: "Roboto",
                       fontWeight: FontWeight.w500,
                       letterSpacing: 0.1,
-                      color: lightBlackColor,
+                      color: blueColor,
                     ),
                   ),
                 ), 
@@ -475,9 +475,9 @@ class MyCorporateConsultingContents extends StatelessWidget {
                     'Accounting Management and Tax Consultancy',
                     style: TextStyle(
                       fontSize: 28.0,
-                      fontFamily: "PTSerif",
+                      fontFamily: "Roboto",
                       letterSpacing: 0.1,
-                      color: blueColor
+                      color: darkBlackColor
                     ),
                   ),
                 ), 
@@ -502,9 +502,9 @@ class MyCorporateConsultingContents extends StatelessWidget {
                   decoration: BoxDecoration(
                     border: Border.all(
                       width: 1.8,
-                      color: lightBlackColor,
+                      color: blueColor,
                     ),
-                    borderRadius: new BorderRadius.circular(5.0),
+                    borderRadius: BorderRadius.circular(5.0),
                   ),
                   child: Text(
                     'Service for corporate in India',
@@ -513,7 +513,7 @@ class MyCorporateConsultingContents extends StatelessWidget {
                       fontFamily: "Roboto",
                       fontWeight: FontWeight.w500,
                       letterSpacing: 0.1,
-                      color: lightBlackColor,
+                      color: blueColor,
                     ),
                   ),
                 ), 
@@ -788,9 +788,9 @@ class MyCorporateConsultingContents extends StatelessWidget {
                     'Corporation Management',
                     style: TextStyle(
                       fontSize: 28.0,
-                      fontFamily: "PTSerif",
+                      fontFamily: "Roboto",
                       letterSpacing: 0.1,
-                      color: blueColor
+                      color: darkBlackColor
                     ),
                   ),
                 ), 
@@ -815,7 +815,7 @@ class MyCorporateConsultingContents extends StatelessWidget {
                       fontFamily: "Roboto",
                       fontWeight: FontWeight.w500,
                       letterSpacing: 0.1,
-                      color: lightBlackColor,
+                      color: blueColor,
                       decoration: TextDecoration.underline,
                     ),
                   ),
@@ -841,7 +841,7 @@ class MyCorporateConsultingContents extends StatelessWidget {
                       fontFamily: "Roboto",
                       fontWeight: FontWeight.w500,
                       letterSpacing: 0.1,
-                      color: lightBlackColor,
+                      color: blueColor,
                       decoration: TextDecoration.underline,
                     ),
                   ),
@@ -867,7 +867,7 @@ class MyCorporateConsultingContents extends StatelessWidget {
                       fontFamily: "Roboto",
                       fontWeight: FontWeight.w500,
                       letterSpacing: 0.1,
-                      color: lightBlackColor,
+                      color: blueColor,
                       decoration: TextDecoration.underline,
                     ),
                   ),
@@ -898,9 +898,9 @@ class MyCorporateConsultingContents extends StatelessWidget {
                     'Auditing and Certification',
                     style: TextStyle(
                       fontSize: 28.0,
-                      fontFamily: "PTSerif",
+                      fontFamily: "Roboto",
                       letterSpacing: 0.1,
-                      color: blueColor
+                      color: darkBlackColor
                     ),
                   ),
                 ), 

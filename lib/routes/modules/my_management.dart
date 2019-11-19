@@ -13,43 +13,55 @@ class MyManagement extends StatelessWidget {
       color: lightGrayColor,
       child: ListView(
         children: <Widget>[
-          Container(child: Image.asset('assets/images/banners/management/banner2.png')),
           Container( 
-            color: lightGrayColor,
+            child: Image.asset('assets/images/banners/management/banner1.jpg'),
+          ),
+          Container(
             padding: EdgeInsets.all(20.0),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
+                  Container(
+                  margin: EdgeInsets.only(bottom: 16.0),
+                  child: Text(
+                    'K-BIZ Management & Exim Dept.',
+                    style: TextStyle(
+                      fontSize: 28.0,
+                      fontFamily: "Roboto",
+                      letterSpacing: 0.1,
+                      color: darkBlackColor
+                    ),
+                  ),
+                ),
                 Container(
-                  margin: EdgeInsets.only(bottom: 20.0),
-                  child: Column(
-                    children: <Widget>[
-                      Text(
-                        'We have been selected as local experts by Korean government institutions',
-                        textAlign: TextAlign.right,
-                        style: TextStyle(
-                          fontSize: 17.0,
-                          fontFamily: "Roboto",
-                          letterSpacing: 0.1,
-                          color: darkBlackColor,
-                        ),
-                      ),
-                      Text(
-                        'and private organizations to help small and medium Korean companies enter the Indian markets.',
-                        textAlign: TextAlign.right,
-                        style: TextStyle(
-                          fontSize: 17.0,
-                          fontFamily: "Roboto",
-                          color: darkBlackColor,
-                        ),
-                      ),
-                    ],
+                  margin: EdgeInsets.only(bottom: 16.0),
+                  child: Text(
+                    'Korean Government Program, License & Certification',
+                    style: TextStyle(
+                      fontSize: 17.0,
+                      fontFamily: "Roboto",
+                      fontWeight: FontWeight.w500,
+                      letterSpacing: 0.1,
+                      color: darkBlackColor,
+                    ),
+                  ),
+                ),
+                Container(
+                  child: Text(
+                    'We have been selected as local experts by Korean government institutions and private organizations to help small and medium Korean companies to enter into Indian markets. With a long history of understanding India and a strong local partner, K-BIZ can offer you the service you need',
+                    style: TextStyle(
+                      fontSize: 16.0,
+                      fontFamily: "Roboto",
+                      letterSpacing: 0.1,
+                      color: darkBlackColor,
+                    ),
                   ),
                 ),
               ],
             ),
-          )
+          ),
         ],
-      )
+      ),
     );
   }
 }

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'package:splash/routes/home_route.dart';
 import 'package:splash/routes/about_us_route.dart';
 import 'package:splash/routes/management_route.dart';
 import 'package:splash/routes/corporate_consulting_route.dart';
@@ -88,11 +87,6 @@ class MyTileItem {
 } // MyTileItem
 
 final List<MyTileItem> myTileItem = <MyTileItem>[
-  MyTileItem(
-    title: 'Home',
-    icon: Icons.home,
-    moveRoute: HomeRoute(),
-  ),
   MyTileItem(
     title: 'About Us',
     icon: Icons.nature_people,

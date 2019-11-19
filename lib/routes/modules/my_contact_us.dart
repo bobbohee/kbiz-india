@@ -16,7 +16,7 @@ class MyContactUs extends StatelessWidget {
       child: ListView(
         children: <Widget>[
           // * content 1
-          Image.asset('assets/images/banners/contact_us/banner1.png'),
+          Image.asset('assets/images/banners/contact_us/banner1.jpg'),
           // * content 2
           Container(
             padding: EdgeInsets.symmetric(

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:splashscreen/splashscreen.dart';
 
-import 'package:splash/routes/home_route.dart';
+import 'package:splash/routes/about_us_route.dart';
 
 class SplashRoute extends StatelessWidget {
   final Color blueColor = Color(0xff4095b6);
@@ -18,7 +18,7 @@ class SplashRoute extends StatelessWidget {
       loaderColor: blueColor,
       backgroundColor: darkGrayColor,
       image: Image.asset('assets/images/logos/logo-600.png'),
-      navigateAfterSeconds: HomeRoute(),
+      navigateAfterSeconds: AboutUsRoute(),
     );
   }
 }

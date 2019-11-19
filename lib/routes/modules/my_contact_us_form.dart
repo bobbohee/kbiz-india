@@ -15,11 +15,11 @@ class MyContactUsForm extends StatelessWidget {
       child: Column(
         children: <Widget>[
           Container(
-            margin: EdgeInsets.only(bottom: 20.0),
+            margin: EdgeInsets.only(bottom: 16.0),
             child: Text(
               'K-BIZ',
               style: TextStyle(
-                fontSize: 19,
+                fontSize: 19.0,
                 fontFamily: "Roboto",
                 fontWeight: FontWeight.w500,
                 color: darkBlackColor,
@@ -30,6 +30,7 @@ class MyContactUsForm extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Container(
+                margin: EdgeInsets.only(bottom: 7.5),
                 child: Text(
                   'KS consultancy services PVT. LTD',
                   style: TextStyle(
@@ -41,7 +42,7 @@ class MyContactUsForm extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(top: 7.5),
+                margin: EdgeInsets.only(top: 3.0),
                 child: Text(
                   'Office : 4th Floor, 490/8, F Block, Sahakar Nagar, Byatarayanapura, Bengaluru, Karnataka 560092, India',
                   style: TextStyle(
@@ -53,7 +54,7 @@ class MyContactUsForm extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(top: 2.5),
+                margin: EdgeInsets.only(top: 3.0),
                 child: Text(
                   'Internet Phone : 080-4161-5026',
                   style: TextStyle(
@@ -64,9 +65,19 @@ class MyContactUsForm extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(top: 2.5),
+                margin: EdgeInsets.only(top: 3.0),
                 child: Text(
                   'Site Address : www.kbizindia.com',
+                  style: TextStyle(
+                    fontSize: 16.0,
+                    fontFamily: "Roboto",
+                    color: darkBlackColor,
+                  ),
+                ),
+              ),
+              Container(
+                child: Text(
+                  'E-mail Us : info@kbizindia.com',
                   style: TextStyle(
                     fontSize: 16.0,
                     fontFamily: "Roboto",

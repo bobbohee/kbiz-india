@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'package:splash/routes/modules/my_about_us.dart';
 import 'package:splash/routes/modules/my_menu.dart';
 
 class AboutUsRoute extends StatelessWidget {
@@ -20,6 +21,7 @@ class AboutUsRoute extends StatelessWidget {
         iconTheme: IconThemeData(color: lightBlackColor),
         backgroundColor: darkGrayColor,
       ),
+      body: MyAboutUs(),
       drawer: MyMenu(),
     );
   }
