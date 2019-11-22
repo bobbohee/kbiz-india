@@ -13,7 +13,10 @@ class MyAboutUs extends StatelessWidget {
       color: lightGrayColor,
       child: ListView(
         children: <Widget>[
-          Image.asset('assets/images/banners/home/banner1.jpg'),
+          Container(
+            color: blueColor,
+            child: Image.asset('assets/images/banners/about_us/banner1.png'),
+          )
         ],
       ),
     );

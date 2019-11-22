@@ -11,9 +11,6 @@ dependencies:
     sdk: flutter
   splashscreen:
   cupertino_icons: ^0.1.2
-  carousel_slider: ^1.3.1
-  flutter_form_builder: ^3.5.4
-  video_player: ^0.10.2+3
 
 dev_dependencies:
   flutter_test:
@@ -26,11 +23,10 @@ flutter:
     - lib/routes/modules/
     - assets/images/logos/
     - assets/images/banners/
-    - assets/images/banners/home/
+    - assets/images/banners/about_us/
     - assets/images/banners/management/
     - assets/images/banners/contact_us/
     - assets/images/banners/corporate_consulting/
-    - assets/images/contents/
   fonts:
     - family: Roboto
       fonts:
@@ -41,14 +37,3 @@ flutter:
           weight: 500
         - asset: assets/fonts/Roboto-Bold.ttf
           weight: 700
-    - family: PTSerif
-      fonts:
-        - asset: assets/fonts/PTSerif-Regular.ttf
-        - asset: assets/fonts/PTSerif-RegularItalic.ttf
-          style: italic
-        - asset: assets/fonts/PTSerif-Bold.ttf
-          weight: 700
-        - asset: assets/fonts/PTSerif-BoldItalic.ttf
-          weight: 700
-          style: italic
-    

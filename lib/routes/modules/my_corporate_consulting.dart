@@ -19,8 +19,7 @@ class MyCorporateConsulting extends StatelessWidget {
           MyCorporateConsultingContents(),
           Container(
             color: Colors.white,
-            padding: EdgeInsets.symmetric(vertical: 15.0),
-            child: Image.asset('assets/images/banners/corporate_consulting/banner2-1.png'),
+            child: Image.asset('assets/images/banners/corporate_consulting/banner2.png'),
           ),
         ],
       ),
