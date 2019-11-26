@@ -16,7 +16,11 @@ class MyAboutUs extends StatelessWidget {
           Container(
             color: blueColor,
             child: Image.asset('assets/images/banners/about_us/banner1.png'),
-          )
+          ),
+          Container(
+            color: blueColor,
+            child: Image.asset('assets/images/banners/about_us/banner2.png'),
+          ),
         ],
       ),
     );
